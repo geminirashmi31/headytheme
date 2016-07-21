@@ -1,4 +1,5 @@
 <article class="post has-thumbnail">
+              
 		<!-- post-thumbnail -->
 		<div class="post-thumbnail">
 			<?php the_post_thumbnail('small-thumbnail'); ?>

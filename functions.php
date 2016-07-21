@@ -1,4 +1,6 @@
-<?php  
+<?php 
+
+// link css stylesheet  
 function heady_script_enqueue() {
 	
 	wp_enqueue_style('style', get_stylesheet_uri());
@@ -31,9 +33,8 @@ add_filter('excerpt_length', 'custom_excerpt_length');
 // Theme setup
 function heady_setup() {
 	
-	//  Navigation Menus	
-	register_nav_menus(array('primary' => __( 'Primary Header Navigation')
-));
+//  Navigation Menu	
+	register_nav_menu('primary', __( 'Primary Menu Navigation'));
 
     // Add featured image support
 	add_theme_support('post-thumbnails');

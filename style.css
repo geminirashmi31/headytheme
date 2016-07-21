@@ -34,12 +34,20 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
 
+h1 {
+	font-size: 60px;
+}
+
 /* General Layout */
 div.container {
 	max-width: 920px;
 	margin: 0 auto;
 	padding-left: 20px;
 	padding-right: 20px;
+}
+
+article.post {
+	border: 1px solid #d81159;
 }
 
 /* Header */
@@ -85,7 +93,7 @@ div.container {
 
 /* Header Nav Menu */
 .site-header nav {
-	margin-top: 30px;
+	margin-top: 10px;
 	background-color: white;
 	border: 3px outset; 
 	padding-top: 20px;
@@ -109,11 +117,7 @@ div.container {
 }
 
 /* Footer */
-.site-footer {
-	margin-top: 30px;
-	border-top: 2px solid #999;
-    font-size: 84%	
-}
+
 /*footer text*/
 .site-footer p {
 	float: right;
@@ -131,40 +135,10 @@ article.page h2 {
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
 
-
-/* Two Column Title Layout
-div.title-column {
-	width: 30%;
-	float: left;
-}
-
-div.text-column {
-	width: 70%;
-	float: right;
-} */
-
-/* Info Box Styles 
-div.info-box {
-	width: 30%;
-	float: right;
-	margin: 0 0 30px 30px;
-	padding: 20px;
-	background-color: #EEE;
-}
-
-div.info-box h4 {
-	margin-bottom: 6px;
-}
-
-div.info-box p {
-	font-size: 85%;
-} */
-
-
 /* Category Links */
 
 .category-nav ul {
-	margin: 0;
+	margin-top: 0;
 	padding: 0;
 }
 /*unordered list clears the float*/
@@ -178,7 +152,7 @@ div.info-box p {
 	float: left;
 }
 .category-nav {
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	font-size: 12px;
 	
 }
@@ -210,28 +184,30 @@ div.info-box p {
 p.post-info {
 	font-size: 87%;
 	color: #999;
+    /*padding-left: 100px;	*/
 }
 
 /* Image Styles */
 img {
 	max-width: 100%;
 	height: auto;
+
 }
 .has-thumbnail {
 	position: relative;
 	padding-left: 200px;
 	padding-bottom: 80px;
+	
 }
-
 .post-thumbnail {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 0;	
 }
 
 /* search*/
 div.header-search {
-	float: right;
+	float: right;	
 }
 
 div.header-search label {
@@ -241,7 +217,7 @@ div.header-search label {
 
 div.header-search #searchsubmit {	
 	background: url("http://www.megaicons.net/static/img/icons_sizes/46/122/24/search-icon.png") top left no-repeat;
-	top: 5px;
+	top: 10px;
 	left: 135px;
 	border: none;		
 	height: 30px;
@@ -249,6 +225,7 @@ div.header-search #searchsubmit {
 	padding-left: 20px;
 } 
 
+/* align the header search box with the header icon with top edge*/
 div.header-search #s {
 	vertical-align: top;
 	padding: 3px 0;	
@@ -270,6 +247,22 @@ div.header-search #s {
 
 .sit-content {
 	border: 3px solid #333;
+}
+
+.site-nav children-links clearfix a:link,
+.site-nav children-links clearfix a:visited {
+	text-decoration: none;
+	display: block;
+	margin-right: 20px;
+	border: 2px solid #d81159;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.site-nav children-links clearfix.current-page-menu a:link,
+.site-nav children-links clearfix.current-page-menu a:visited {
+	background-color: #d81159;
+	color: white;	
 }
 
 
