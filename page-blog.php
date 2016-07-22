@@ -10,13 +10,7 @@
 		</div>
 		<!-- /header-search -->
 	
-	<?php if (( is_page('blog')) || ( is_category( array( 'all-posts', 'android', 'business', 'design', 'development', ios))))
-	{ ?>
 		<nav class="category-nav"><ul><?php wp_list_cats(); ?></ul></nav>
-	<?php }
-	else
-		echo " ";
-	?>
 	
 		<?php if (have_posts()) :
 		while (have_posts()) : the_post(); ?>

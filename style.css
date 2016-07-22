@@ -180,6 +180,13 @@ article.page h2 {
 	color: white;	
 }
 
+.category-nav.li.current-cat a:link
+ {
+	background-color: #d81159;
+	color: white;
+}
+
+
 /* Post Styles */
 p.post-info {
 	font-size: 87%;

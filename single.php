@@ -1,9 +1,15 @@
 <?php
 
-get_header();
+get_header(); ?>
 
-if (have_posts()) :
-	while (have_posts()) : the_post(); ?>
+<nav class="category-nav"><ul><?php wp_list_cats(); ?></ul></nav>
+
+<?php if (have_posts()) : ?>
+
+
+
+	<?php while (have_posts()) : the_post(); ?>
+	
 	
 	<article class="post">
 		<h2><a href="<?php the_permalink();?>"><?php the_title(); ?>
