@@ -46,7 +46,7 @@ div.container {
 	padding-right: 20px;
 }
 
-article.post {
+article.post-display {
 	border: 1px solid #d81159;
 }
 
@@ -192,6 +192,17 @@ p.post-info {
 	font-size: 87%;
 	color: #999;
     /*padding-left: 100px;	*/
+}
+
+/*author_pic style*/
+#author-pic {
+float: left;
+margin-right: 10px;
+border-radius: 50%;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+
+
 }
 
 /* Image Styles */

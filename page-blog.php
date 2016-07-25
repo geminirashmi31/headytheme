@@ -11,11 +11,12 @@
 		<!-- /header-search -->
 	
 		<nav class="category-nav"><ul><?php wp_list_cats(); ?></ul></nav>
+		<p><?php All posts ?></p>
 	
 		<?php if (have_posts()) :
 		while (have_posts()) : the_post(); ?>
 		
-		<article class="post">		
+		<article class="post-display">		
 		<?php
 		$args = array( 'posts_per_page' => 10, 'order'=> 'DESC', 'orderby' => 'date' );
 		$postslist = get_posts( $args );

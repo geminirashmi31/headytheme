@@ -13,8 +13,10 @@ get_header(); ?>
 	
 	<article class="post">
 		<h2><a href="<?php the_permalink();?>"><?php the_title(); ?>
-              </a></h2>			  
-		
+              </a></h2>	
+        <div id="author-pic">			  
+		<?php echo get_avatar( get_the_author_meta('ID'), 60); ?>
+		</div>
 		<p class="post-info"><?php the_author(); ?><br />
 		<?php the_time('F j Y'); ?>
 		<?php $categories = get_the_category();
@@ -32,7 +34,7 @@ get_header(); ?>
 		
 		</p>
 		
-		<?php the_post_thumbnail('banner-image'); ?>
+		<?php the_post_thumbnail('banner-image'); ?><br/>
 		
 		<?php the_content(); ?>
 	</article>
