@@ -2,15 +2,7 @@
 
 get_header();
 	?>
-	
-	<h1><?php bloginfo('name'); ?></h1>
-	
-	<!-- header-search -->
-		<div class="header-search">		
-		<?php get_search_form(); ?>
-		</div>
-		<!-- /header-search -->
-
+			
  <?php if (have_posts()) : ?>
  
  <nav class="category-nav"><ul><?php wp_list_cats(); ?></ul></nav>
@@ -24,13 +16,11 @@ get_header();
 			echo 'Archives:';
 		}
 ?></ul></h2>
+
 <?php
 	while (have_posts()) : the_post(); ?>
-	
-	
-		<h2><a href="<?php the_permalink();?>"><?php the_title(); ?>
-              </a></h2>
-				
+	<h3><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>
+					
 		<?php get_template_part('content'); 
 	
 	 endwhile;

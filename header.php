@@ -8,6 +8,8 @@
    </head>
   
    <body <?php body_class(); ?>> <!-- it allows to target different pages with css very easily -->
+   
+  
   
 		<div class="container">
 	
@@ -22,6 +24,11 @@
 		  
 			</header><!-- /site-header -->
 		
+		 <!-- header-search -->
+		<div class="header-search">		
+		<?php get_search_form(); ?>
+		</div>
+	  <!-- /header-search -->
 		
 		
 	

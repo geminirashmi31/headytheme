@@ -234,13 +234,11 @@ div.header-search label {
 }
 
 div.header-search #searchsubmit {	
-	background: url("http://www.megaicons.net/static/img/icons_sizes/46/122/24/search-icon.png") top left no-repeat;
-	top: 10px;
-	left: 135px;
+	background-color: blue;
+	color: #FFF;
 	border: none;		
-	height: 30px;
-	width: 30px;
-	padding-left: 20px;
+	padding: 5px 14px;
+	vertical-align: top;
 } 
 
 /* align the header search box with the header icon with top edge*/
