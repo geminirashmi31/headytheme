@@ -1,7 +1,7 @@
 <?php
+get_header();?>
 
-get_header();
-	?>
+	<h1><?php bloginfo('name'); ?></h1><br/>
 			
  <?php if (have_posts()) : ?>
  
@@ -19,11 +19,12 @@ get_header();
 
 <?php
 	while (have_posts()) : the_post(); ?>
+	<div class="post-border">
 	<h3><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>
 					
-		<?php get_template_part('content'); 
+		<?php get_template_part('content'); ?>  </div>
 	
-	 endwhile;
+	 <?php endwhile;
 	
 	else :
 	echo '<p>No content found</p>'; 

@@ -10,10 +10,9 @@ get_header(); ?>
 		
 	<article class="post">
 		<h3><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>	
-		
-        <div id="author-pic">			  
+					  
 		<?php echo get_avatar( get_the_author_meta('ID'), 60); ?>
-		</div>
+		
 		<p class="post-info"><?php the_author(); ?><br />
 		<?php the_time('F j Y'); ?>
 		<?php $categories = get_the_category();

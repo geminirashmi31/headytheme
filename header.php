@@ -8,9 +8,7 @@
    </head>
   
    <body <?php body_class(); ?>> <!-- it allows to target different pages with css very easily -->
-   
-  
-  
+     
 		<div class="container">
 	
 			<!-- site-header -->
