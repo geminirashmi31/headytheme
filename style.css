@@ -218,7 +218,7 @@ img {
 .has-thumbnail {
 	position: relative;
 	padding-left: 200px;
-	padding-bottom: 80px;
+	padding-bottom: 50px;
 	
 }
 .post-thumbnail {
@@ -263,6 +263,7 @@ div.header-search #s {
 	color: #d81159;
 	float: right;
 	
+	
 }
 
 .sit-content {
@@ -290,7 +291,7 @@ div.header-search #s {
 {	
 	background: #ffffff;
 	margin:.5em 0 1.5em;
-	padding:8px 8px 8px;
+	padding:8px 8px 0px;
 	border:1px solid #d81159;
 	border-bottom:1px solid #d81159;
 	border-width:1px 1px 1px;
