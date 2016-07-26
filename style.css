@@ -14,7 +14,7 @@ html {
 body {
 	padding: 0;
 	margin: 0;
-	font-family: Arial, sans-serif;
+	font-family: Raleway-Heavy;
 	font-size: 14px;
 	color: #333;
 }
@@ -40,14 +40,16 @@ h1 {
 
 /* General Layout */
 div.container {
-	max-width: 920px;
+	max-width: 1000px;
 	margin: 0 auto;
 	padding-left: 20px;
 	padding-right: 20px;
 }
 
-article.post-display {
-	border: 1px solid #d81159;
+article.post h3 a:link,
+article.post h3 a:visited {
+	text-decoration: none;
+	color: #d81159;
 }
 
 /* Header */
@@ -86,25 +88,32 @@ article.post-display {
 	float: left;
 }
 
-.site-nav ul li a:link,
-.site-nav ul li a:visited {
-
+#logo {
+	height: 60px;
+	width: 60px;
+	padding-left: -50px;
+	padding-top: 0px;
+	margin-top: 0px;
+	
 }
 
 /* Header Nav Menu */
 .site-header nav {
 	margin-top: 0px;
-	background-color: white;
+	background-color: gray;
 	border: 3px outset; 
 	padding-top: 20px;
 	padding-bottom: 20px;
 	font-size: 19px;
-	font-family: 'Raleway-Heavy';
+	font-family: Raleway-Heavy;
+	
+	
 }
 
 .site-header nav ul li {
 	margin-right: 50px;
 	text-align: center;
+	
 }
 
 .site-header nav ul li a:hover {
@@ -113,7 +122,8 @@ article.post-display {
 
 .site-header nav ul li a:link,
 .site-header nav ul li a:visited {	
-	text-decoration: none;	
+	text-decoration: none;
+    color: white;	
 }
 
 /* Footer */
@@ -297,6 +307,12 @@ div.header-search #s {
 	border-width:1px 1px 1px;
 }
 
+.post-border h3 a:link,
+.post-border h3 a:visited {
+	text-decoration: none;
+	color: #d81159;
+	padding-top: 2px;
+}
 
 
 

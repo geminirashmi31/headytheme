@@ -8,14 +8,16 @@
    </head>
   
    <body <?php body_class(); ?>> <!-- it allows to target different pages with css very easily -->
+   
      
-		<div class="container">
-	
+		<div class="container">	
 			<!-- site-header -->
 			<header class="site-header">
-			
+             <div id="logo"><img src="http://localhost:81/wordpress/wp-content/uploads/2016/07/heady-logo.png"></div>			
+				
 				<!-- site-nav -->
 				<nav class="site-nav">
+				
 				<?php $args = array('theme_location' => 'primary'); ?>						
 				<?php wp_nav_menu( $args); ?>
 				</nav><!-- site-nav -->	
