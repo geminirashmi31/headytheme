@@ -15,18 +15,7 @@ get_header(); ?>
 		
 		<p class="post-info"><?php the_author(); ?><br />
 		<?php the_time('F j Y'); ?>
-		<?php $categories = get_the_category();
-		$seperator = ", ";
-		$output = '';
 		
-		if($categories) {
-			foreach ($categories as $category) {
-				$output .= '<a href="' . get_category_link($category->term_id) . '">' .$category->cat_name . '</a>' .$seperator;
-			}
-			
-			echo trim($output, $seperator);
-		}
-		?>
 		
 		</p>
 		
