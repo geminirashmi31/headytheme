@@ -1,8 +1,8 @@
 <?php
 get_header();?>
 
-	<h1><?php bloginfo('name'); ?></h1><br/>
-			
+	<div id="blog-title"><h1><?php bloginfo('name'); ?></h1><br/></div>	
+				
  <?php if (have_posts()) : ?>
  
  <nav class="category-nav"><ul><?php wp_list_cats(); ?></ul></nav>

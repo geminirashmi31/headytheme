@@ -19,11 +19,6 @@ body {
 	color: #333;
 }
 
-a:link,
-a:visited {
-	color: #006ec3;
-}
-
 p {
 	line-height: 1.65em;
 	margin: 0 0 1em 0;
@@ -168,6 +163,7 @@ article.page h2 {
 .category-nav {
 	margin-bottom: 5px;
 	font-size: 12px;
+	margin-left: 0px;
 	
 }
 
@@ -179,7 +175,8 @@ article.page h2 {
 }
 
 .category-nav li a:link,
-.category-nav li a:visited{
+.category-nav li a:visited
+ {
 	display: block;
 	margin-right: 20px;
 	border: 2px solid #d81159;
@@ -189,7 +186,8 @@ article.page h2 {
 }
 
 .category-nav ul li.current-cat a:link,
-.category-nav ul li.current-cat a:visited {
+.category-nav ul li.current-cat a:visited
+ {
 	background-color: #d81159;
 	color: white;	
 }
@@ -199,6 +197,19 @@ article.page h2 {
 	background-color: #d81159;
 	color: white;
 }
+
+/*.all-posts {
+	font-size: 12px;
+}
+
+.all-posts a:link,
+.all-posts a:visited
+{
+	text-decoration: none;
+	display: block;
+	color: #d81159;
+	float: left;
+} */
 
 
 /* Post Styles */
@@ -262,6 +273,7 @@ div.header-search #s {
 	
 }
 
+/*read more in each post */
 .read-more a:link,
 .read-more a:visited {
 	display: block;
@@ -276,7 +288,7 @@ div.header-search #s {
 	
 }
 
-.sit-content {
+/*.site-content {
 	border: 3px solid #333;
 }
 
@@ -294,7 +306,7 @@ div.header-search #s {
 .site-nav children-links clearfix.current-page-menu a:visited {
 	background-color: #d81159;
 	color: white;	
-}
+} */
 
 /*border around each post*/
 .post-border
@@ -314,7 +326,9 @@ div.header-search #s {
 	padding-top: 2px;
 }
 
-
-
+#blog-title {
+	font-family: MontserratAlternates-Bold;
+	color: black;
+}
 
 
