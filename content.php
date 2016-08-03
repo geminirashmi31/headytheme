@@ -21,11 +21,9 @@
 		</p>
 		<?php } ?>
 		
-		
+		<div class="cat-display">
 		<?php if ( is_category('all-posts'))  { ?>
-			<?php $categories = get_the_category();
-		$seperator = ", ";
-		$output = '';
+			<?php $categories = get_the_category();		
 		
 		if($categories) {
 			foreach ($categories as $category) {
@@ -39,7 +37,7 @@
 		else
 		{
 			echo ' ';
-		} ?>
+		} ?></div>
 		
 		
 	</article>

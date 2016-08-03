@@ -1,21 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
    <head>
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<meta name="viewport" content="width=device-width"> 
 		<title><?php bloginfo('name'); ?></title>
+		<div class="logo"><img src="http://localhost:81/wordpress/wp-content/uploads/2016/07/heady-logo.png"></div>
 		<?php wp_head(); ?>
    </head>
   
    <body <?php body_class(); ?>> <!-- it allows to target different pages with css very easily -->
-   
-     <div class="logo"><img src="http://localhost:81/wordpress/wp-content/uploads/2016/07/heady-logo.png"></div>	
-			 
+   			 
 			<div class="container">
+			
 			<!-- site-header -->
 			<header class="site-header">
-             
-				
+             				
 				<!-- site-nav -->
 				<nav class="site-nav">
 				
@@ -24,12 +23,20 @@
 				</nav><!-- site-nav -->	
 		  
 			</header><!-- /site-header -->
-		
-		 <!-- header-search -->
-		<div class="header-search">		
+			
+		<?php if ( is_page( 'blog' ) || is_category())
+		{ ?>
+			<!-- header-search -->
+		 <div class="header-search">		
 		<?php get_search_form(); ?>
 		</div>
 	  <!-- /header-search -->
+		<?php }
+		
+		else
+			echo ' ';
+		?>
+		 
 		
 		
 	
