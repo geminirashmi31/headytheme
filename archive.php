@@ -15,7 +15,6 @@ get_header();?>
 		} else {
 			echo 'Archives:';
 		}
-
 ?></ul></h2>
 
 <?php
@@ -25,13 +24,12 @@ $count =0;
 	<?php $count++; ?>
 	<?php if ($count == 1) : ?>
 	<div class="latest-post">
-	<?php else : ?>
+	<?php else: ?>
 	<div class="post-border">
 	<?php endif; ?>
 	<h3><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>
 					
 		<?php get_template_part('content'); ?>  </div>
-	
 	 <?php endwhile;
 	
 	else :

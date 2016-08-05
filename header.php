@@ -4,14 +4,14 @@
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<meta name="viewport" content="width=device-width"> 
 		<title><?php bloginfo('name'); ?></title>
-		<div class="logo"><img src="http://localhost:81/wordpress/wp-content/uploads/2016/07/heady-logo.png"></div>
+		
 		<?php wp_head(); ?>
    </head>
   
    <body <?php body_class(); ?>> <!-- it allows to target different pages with css very easily -->
    			 
 			<div class="container">
-			
+			<div class="logo"><img src="http://localhost:81/wordpress/wp-content/uploads/2016/07/heady-logo.png"></div>
 			<!-- site-header -->
 			<header class="site-header">
              				

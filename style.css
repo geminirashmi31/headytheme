@@ -86,11 +86,10 @@ article.post h3 a:visited {
 
 .logo {
 	height: 70px;
-	width: 70px;
-	margin-left: 50px;
+	width: 62px;
+	margin-left: -60px;
 	padding-top: 0px;
 	margin-top: 0px;
-	position: relative;
 	
 }
 
@@ -98,7 +97,6 @@ article.post h3 a:visited {
 .site-header nav {
 	margin-top: -70px;
 	background-color: gray;
-	border: 3px outset; 
 	padding-top: 20px;
 	padding-bottom: 20px;
 	font-size: 19px;

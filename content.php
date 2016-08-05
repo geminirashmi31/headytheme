@@ -22,12 +22,15 @@
 		<?php } ?>
 		
 		<div class="cat-display">
-		<?php if ( is_category('all-posts'))  { ?>
+		<?php if ( is_category('all-posts'))  { ?>		                 
 			<?php $categories = get_the_category();		
 		
+		/*display the category associated with the post on all-posts page excluding the all-posts category whose id is 12*/
 		if($categories) {
 			foreach ($categories as $category) {
+				if ($category->term_id != 12){
 				$output .= '<a href="' . get_category_link($category->term_id) . '">' .$category->cat_name . '</a>' .$seperator;
+			  }
 			}
 			
 			echo trim($output, $seperator);
