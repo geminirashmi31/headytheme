@@ -6,9 +6,7 @@
 		</div><!-- /post-thumbnail -->
 				
 		<p class="post-info"><?php the_time('F j Y'); ?></p>
-		
-		
-		
+				
 		<?php if ( is_search() OR is_archive()) { ?>
 			<p>
 		<?php echo get_the_excerpt(); ?>

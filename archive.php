@@ -1,8 +1,6 @@
 <?php
 get_header();?>
-
-	<div id="blog-title"><h1><?php bloginfo('name'); ?></h1><br/></div>	
-				
+						
  <?php if (have_posts()) : ?>
  
  <nav class="category-nav"><ul><?php wp_list_cats(); ?></ul></nav>
@@ -19,7 +17,9 @@ get_header();?>
 
 <?php
 
-$count =0; 
+if (is_category('all-posts'))
+{
+	$count =0; 
 	while (have_posts()) : the_post(); ?>
 	<?php $count++; ?>
 	<?php if ($count == 1) : ?>
@@ -30,9 +30,20 @@ $count =0;
 	<h3><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>
 					
 		<?php get_template_part('content'); ?>  </div>
-	 <?php endwhile;
+	 <?php endwhile;?></div>
+    <?php
+ }
+
+else
+{ 
+    while (have_posts()) : the_post(); ?>
+      <div class="post-border">
+	  <h3><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>					
+       <?php get_template_part('content'); ?></div>
+	   <?php endwhile;
+} ?>
 	
-	else :
+	 <?php else :
 	echo '<p>No content found</p>'; 
 	endif; ?>
 	
