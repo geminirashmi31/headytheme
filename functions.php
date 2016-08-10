@@ -38,8 +38,8 @@ function heady_setup() {
 
     // Add featured image support
 	add_theme_support('post-thumbnails');
-	add_image_size('small-thumbnail', 182, 180, true);
-	add_image_size('banner-image', 920, 210, true);
+	add_image_size('small-thumbnail', 182.33, 180, true);
+	add_image_size('banner-image', 997, 376, true);
 }
 
 add_action('after_setup_theme', 'heady_setup');

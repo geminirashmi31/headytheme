@@ -26,7 +26,7 @@
 			
 		<?php if ( is_page( 'blog' ) || is_category())
 		{ ?>	
-			<div id="blog-title"><?php bloginfo('name'); ?> <br /></div>
+			<div id="blog-title"><?php bloginfo('name'); ?> </div>
 			<!-- header-search -->
 		 <div class="header-search">		
 		<?php get_search_form(); ?>
