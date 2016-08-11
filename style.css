@@ -12,22 +12,22 @@ html {
 }
 
 body {
+	width: 1200pt;
 	padding: 0;
 	margin: 0;
 	font-family: Raleway;
 	font-weight: Medium;
-	font-size: 18px;
+	font-size: 18pt;
 	color: #000000;
 }
 
 p {
-	font-size: 18px;
+	font-size: 18pt;
 	
 }
 
 h2, h3, h4, h5, h6 {
 	margin: 0 0 0 0;
-	font-weight: normal;
 }
 
 h1 {
@@ -36,18 +36,15 @@ h1 {
 
 /* General Layout */
 div.container {
-	max-width: 998px;
+	max-width: 1000pt;
 	margin: 0 auto;
-	padding-left: 0px;
-	padding-right: 0px;
+	padding-left: 0pt;
+	padding-right: 0pt;
+	margin-left: 94pt;
 }
 
-
-
 /* Header */
-.site-header {	
-	margin-bottom: 20px;
-	margin-top: 0px;
+.site-header {		
 	padding: 0 0 0 0;
 } 
 
@@ -69,6 +66,7 @@ div.container {
 .site-nav ul {
 	margin: 0;
 	padding: 0;
+	
 }
 /*unordered list clears the float*/
 .site-nav ul:before, .site-nav ul:after { content: ""; display: table; }
@@ -82,48 +80,47 @@ div.container {
 }
 
 .logo {
-	height: 92px;
-	width: 93px;
-	margin-left: 0px;
-	padding-top: 0px;
-	margin-top: 0px;	
+	height: 92pt;
+	width: 93pt;
+	margin-left: 0pt;
+	padding-top: 0pt;
+	margin-top: 0pt;	
 }
 
 /* Header Nav Menu */
 .site-header nav {
-	margin-top: -92px;
-	background-color: rgba(83, 91, 130, 0.498039);	
-	font-family: Raleway-Heavy;
+	margin-top: -92pt;
+	background-color: rgba(83, 91, 130, 1);	
+	margin-right: 93pt;
 	color: #ffffff;
 	width: 100%;
-	height: 61px;
-    padding-top: 32px;	
+	height: 61pt;
+    padding-top: 32pt;	
+
 }
 
-.site-header nav ul li {
-	margin-right: 30px;
-	margin-left: 60px;
-	font-size: 19px;
-	text-align: center;	
+.site-header nav ul li {	
+	font-size: 19pt;
+	padding-right: 50pt;
+	font-family: Raleway-Heavy;
 }
 
 .site-header nav ul li:first-child {
-	margin-left: 93px;
+	margin-left: 93pt;
 }
 
 .site-header nav ul li a:hover {
-	border-bottom: 4px solid #d81159;
+	border-bottom: 4pt solid #d81159;
 }
 
 .site-header nav ul li a:link,
 .site-header nav ul li a:visited {	
 	text-decoration: none;
     color: white;
-    margin-left: 30px;	
+    margin-left: 30pt;	
 }
 
 /* Footer */
-
 /*footer text*/
 .site-footer p {
 	float: right;
@@ -133,12 +130,21 @@ div.container {
 	border: 1px solid #d81159;
 }
 
+#blog-title {
+	font-family: Montserrat Alternates;
+	font-weight: bold;
+	color: #152266;
+	font-size: 115pt;
+	padding-bottom: 10pt;
+	width: 275pt;
+	height: 140pt;
+}
 
-/* Page Layout */
+/* Page Layout 
 article.page h2 {
 	font-size: 225%;
 	margin-bottom: 15px;
-}
+} */
 
 /* Clearfix */
 .clearfix:before, .clearfix:after { content: ""; display: table; }
@@ -146,13 +152,12 @@ article.page h2 {
 .clearfix { *zoom: 1; }
 
 /* Category Links */
-
 .category-nav ul {
 	margin-top: 0;
 	padding: 0;
 	font-family: Raleway;
 	font-weight: Bold;
-	
+	font-size: 12.92pt;	
 }
 /*unordered list clears the float*/
 .category-nav ul:before, .category-nav ul:after { content: ""; display: table; }
@@ -164,35 +169,29 @@ article.page h2 {
 	list-style: none;
 	float: left;
 }
-.category-nav {
-	margin-bottom: 10px;
-	
-	margin-left: 0px;
-	display: block;	
+
+.category-nav {	
+	margin-bottom: 0pt;	
 }
 
 .category-nav a:link,
 .category-nav a:visited {
 	text-decoration: none;
-	color: #d81159;
-	
+	color: #d81159;	
+	text-align: center;  /*text-align, vertical-align and line-height helps to display the text in the center of the block*/
+	vertical-align: middle;
+	line-height: 31pt;
 }
 
 .category-nav li a:link,
 .category-nav li a:visited
  {
 	display: block;
-	margin-right: 20px;
-	border: 1px solid #d81159;
-	height: 6px;
-	padding-left: 20px;
-	padding-top: 10px;
-	padding-bottom: 15px;
-	padding-right: 20px;
-	text-align: center;
-	font-family: Raleway;
-	font-weight: Bold;
-	font-size: 12.92px;
+	height: 31pt; /*height of the block*/
+	margin-right: 15pt; /*margin between each category block*/
+	border: 1pt solid #d81159;
+	padding-left: 20pt;
+	padding-right: 20pt;		
 }
 
 .category-nav ul li.current-cat a:link,
@@ -221,44 +220,28 @@ article.page h2 {
 	float: left;
 } */
 
-/*post-heading in the details page*/
-article.post p a:link,
-article.post p a:visited {
-	text-decoration: none;
-	color: #d81159;
-	font-size: 40px;
-	font-family: Raleway;
-	font-weight: Bold;
-}
-
-/* Post Styles */
-p.post-info {
-	font-family: Raleway;
-	font-weight: Light;
-	font-size: 18px;
-	color: #152266;
-	padding-top: 15px;
-}
 
 /*date style on main page*/
-p.post-info-main {
+.post-date {
 	font-family: Raleway;
 	font-weight: Thin;
-	font-size: 12px;
+	font-size: 12pt;
 	color: #000000;
-	padding-top: 10px;
+	padding-top: 10pt;
+	margin-left: 260pt;
+	padding-bottom: 10pt;
 }
 
 /*author_pic style*/
 .avatar {
 float: left;
-height: 88px;
-width: 88px;
-margin-right: 10px;
+height: 88pt;
+width: 88pt;
+margin-right: 10pt;
 border-radius: 50%;
 -moz-border-radius: 50%;
 -webkit-border-radius: 50%;
-padding-bottom: 0px;
+padding-bottom: 0pt;
 
 
 }
@@ -268,22 +251,17 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-.has-thumbnail {
-	position: relative;
-	padding-left: 200px;
-	padding-bottom: 50px;
-	
-}
-.post-thumbnail {
+
+/*displaying on main page*/
+article.has-thumbnail {
 	position: absolute;
-	top: 0;
-	left: 0;	
+	
 }
 
 /* search*/
 div.header-search {
 	float: right;
-    margin-top: 0px;	
+    margin-top: 0pt;	
 }
 
 div.header-search label {
@@ -295,42 +273,60 @@ div.header-search #searchsubmit {
 	background: url("http://www.megaicons.net/static/img/icons_sizes/46/122/24/search-icon.png") top left no-repeat;
 	color: #FFF;
 	border: none;		
-	padding: 5px 14px;
+	padding: 5pt 14pt;
 	vertical-align: top;
 } 
 
 /* align the header search box with the header icon with top edge*/
 div.header-search #s {
 	vertical-align: top;
-	padding: 3px 0;	
+	padding: 3pt 0;	
 	
 }
 
 /*read more in each post */
-.read-more a:link,
-.read-more a:visited {
+.read-more {
 	display: block;
-	margin-right: 20px;
-	border: 2px solid #d81159;
-	padding-left: 10px;
-	padding-right: 10px;
+	width: 87pt;
+	height: 31pt;
+	border: 1pt solid #d81159;	
+	float: right;
+	text-align: center;	
+}
+.read-more a:link,
+.read-more a:visited {	
 	text-decoration: none;
-	color: #d81159;
-	float: right;	
+	color: #d81159;	
+	font-family: Raleway;
+	font-weight: bold;
+	font-size: 12.92pt;
 }
 
 /*category display in each post on all posts page */
 .cat-display a:link,
 .cat-display a:visited {
 	display: block;
-	margin-right: 20px;
-	border: 2px solid #d81159;
-	padding-left: 10px;
-	padding-right: 10px;
+	margin-right: 17pt;
+	border: 1pt solid #d81159;	
 	text-decoration: none;
 	color: #d81159;
-	float: left;	
+	float: left;
+	font-family: Raleway;
+	font-weight: Bold;
+	font-size: 10.42pt;
+	padding-left: 16pt;
+	padding-right: 16pt;
+	height: 27.18pt;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 27.18pt;
+	margin-bottom: 26pt;	
 }
+
+.cat-display a:first-child {
+	margin-left: 260pt;
+}
+
 
 /*.site-content {
 	border: 3px solid #333;
@@ -355,57 +351,84 @@ div.header-search #s {
 /*border around each post*/
 .post-border
 {	
-	background: #ffffff;
-	margin:.5em 0 1.5em;
-	padding:8px 8px 0px;
-	border:1px solid #d81159;
-	border-bottom:1px solid #d81159;
-	border-width:3px 3px 3px;
-	padding-bottom: 15px;
-	
+    padding-top:18pt;
+	height: 274pt;
+	width: 998pt;
+	margin-bottom: 26pt; 
+	border:3pt solid #d81159;
+	height: 274pt;
+	width: 998pt;
 }
 
 .post-border h3 a:link,
 .post-border h3 a:visited {
-	text-decoration: none;
-	color: #d81159;
-	padding-top: 2px;
+	
+	padding-left: 26pt;
 	font-family: Raleway;
 	font-weight: Bold;
-	font-size: 40px;
+	font-size: 40pt;
+	text-decoration: none;
+	color: #d81159;	
 }
 
-/*display latest post in blue border and blue heading*/
+/*display latest post in blue border and blue heading on main page*/
 .latest-post
-{	
-	background: #ffffff;
-	margin:.5em 0 1.5em;
-	padding:8px 8px 0px;
-	border:3px solid #152266;
-	border-bottom:3px solid #152266;
-	border-width:3px 3px 3px;
+{	padding-top:18pt;
+	margin-bottom: 26pt ; /*margin between the two block borders*/	
+	padding-left: 26pt; /*padding between left-border and heading text*/
+	border:3pt solid #152266;
+	height: 274pt;
+	width: 998pt;
 }
 
 .latest-post h3 a:link,
 .latest-post h3 a:visited {
 	font-family: Raleway;
 	font-weight: Bold;
-	font-size: 40px;
+	font-size: 40pt;
 	text-decoration: none;
-	color: #152266;
-	padding-top: 2px;
-	height: 274px;
-	width: 998px;
+	color: #152266;	
 }
 
-#blog-title {
-	font-family: Montserrat Alternates;
-	font-weight: bold;
-	color: #152266;
-	font-size: 115px;
-	padding-bottom: 10px;
-	width: 275px;
-	height: 140px;
+.post-thumbnail {
+	position: absolute;
+	padding-left: 26pt;
+	padding-top: 5pt;
+	padding-bottom: 26pt;
+	
 }
+
+.excerpt {
+	font-family: Raleway;
+	font-weight: Medium;
+	font-size: 18pt;
+	width: 627pt;
+	height: 84pt;
+    padding-left: 260pt;
+	padding-bottom: 63pt;
+}
+
+/*post-heading in the details page*/
+article.post p a:link,
+article.post p a:visited {
+	text-decoration: none;
+	color: #d81159;
+	font-size: 40pt;
+	font-family: Raleway;
+	font-weight: Bold;
+}
+
+/* Author and date in details page */
+p.post-info {
+	font-family: Raleway;
+	font-weight: Light;
+	font-size: 18pt;
+	color: #152266;
+	padding-top: 15pt;
+}
+
+
+
+
 
 

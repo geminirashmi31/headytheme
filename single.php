@@ -14,9 +14,7 @@ get_header(); ?>
 		<?php echo get_avatar( get_the_author_meta('ID'), 60); ?>
 		
 		<p class="post-info"><?php the_author(); ?><br />
-		<?php the_time('F j, Y'); ?>
-		
-		
+		<?php the_time('F j, Y'); ?>		
 		</p>
 		
 		<?php the_post_thumbnail('banner-image'); ?><br/>
