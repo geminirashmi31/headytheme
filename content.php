@@ -9,7 +9,7 @@
 				
 		<div class="excerpt"><?php if ( is_search() OR is_archive()) { ?>
 			
-		<?php echo get_the_excerpt(); ?>
+		<?php echo get_the_excerpt(); ?></div>
 		<div class="read-more"><a href="<?php the_permalink(); ?>">Read More</a></div>
 		
 		<?php } else { ?>				
@@ -17,7 +17,7 @@
 		<?php echo get_the_excerpt(); ?>
 		<div class="read-more"><a href="<?php the_permalink(); ?>">Read More</a></div>
 		
-		<?php } ?> </div>
+		<?php } ?> 
 		
 		<div class="cat-display">	                 
 			<?php $categories = get_the_category();		
