@@ -1,15 +1,15 @@
 <?php
 
 get_header(); ?>
-<div id="single">
-<nav class="category-nav"><ul><?php wp_list_cats(); ?></ul></nav></div>
+
 	<!-- header-search -->
 		 <div class="header-search">		
 		<?php get_search_form(); ?>
 		</div>
 	<!-- /header-search -->
-	  
-
+	<div id="single">
+	<nav class="category-nav"><ul><?php wp_list_cats(); ?></ul></nav></div>
+	
 <?php if (have_posts()) : ?>
 
 	<?php while (have_posts()) : the_post(); ?>

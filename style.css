@@ -12,17 +12,19 @@ html {
 }
 
 body {
-	width: 1200pt;
+	max-width: 100%;
 	padding: 0;
 	margin: 0;
 	font-family: Raleway;
 	font-weight: Medium;
-	font-size: 18pt;
+	font-size: 18px;
 	color: #000000;
+	box-sizing: border-box;
+	position: relative;
 }
 
 p {
-	font-size: 18pt;
+	font-size: 18px;
 	
 }
 
@@ -31,42 +33,30 @@ h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 60pt;
+	font-size: 60px;
 }
 
 /* General Layout */
 div.container {
-	max-width: 1000pt;
-	margin: 0 auto;
-	padding-left: 0pt;
-	padding-right: 0pt;
-	margin-left: 94pt;
+	max-width: 1000px;
+	margin: 0 auto; /*make the content center aligned*/
 }
 
 /* Header */
 .site-header {		
-	padding: 0 0 0 0;
+	padding: 0 0 0 0;	
 } 
 
-.site-header h1 {
-	margin: 0;
+.menu-trigger{
+	display: none;
 }
-
-.site-header h1 a:link,
-.site-header h1 a:visited {
-	text-decoration: none;
-}
-
-.site-header h5 {
-	margin: 0;
-}
-
 /* Navigation menus */
+
 /*remove padding and margin from unordered list*/
 .site-nav ul {
 	margin: 0;
 	padding: 0;
-	
+	display: block;	
 }
 /*unordered list clears the float*/
 .site-nav ul:before, .site-nav ul:after { content: ""; display: table; }
@@ -77,47 +67,50 @@ div.container {
 .site-nav ul li {
 	list-style: none;
 	float: left;
+	text-align: center;
+	width: 12.5%;
 }
 
 .logo {
-	height: 92pt;
-	width: 93pt;
-	margin-left: 0pt;
-	padding-top: 0pt;
-	margin-top: 0pt;	
+	height: 92px;
+	width: 93px;
+	margin-left: 0px;
+	padding-top: 0px;
+	margin-top: 0px;	
 }
 
-/* Header Nav Menu */
+/* Header Navigation Menu */
 .site-header nav {
-	margin-top: -92pt;
-	background-color: rgba(83, 91, 130, 1);	
-	margin-right: 93pt;
+	margin-top: -92px;
+	background-color: rgba(83, 91, 130, 0.498039);	
 	color: #ffffff;
-	width: 100%;
-	height: 61pt;
-    padding-top: 32pt;	
-
+	height: 61px;
+    padding-top: 32px;	
+	display: block;
+	
 }
 
 .site-header nav ul li {	
-	font-size: 19pt;
-	padding-right: 50pt;
-	font-family: Raleway-Heavy;
+	font-size: 19px;
+	font-family: Raleway-Heavy;	
 }
 
 .site-header nav ul li:first-child {
-	margin-left: 93pt;
+	margin-left: 93px; 
 }
 
 .site-header nav ul li a:hover {
-	border-bottom: 4pt solid #d81159;
+	border-bottom: 4px solid #d81159;
 }
 
 .site-header nav ul li a:link,
 .site-header nav ul li a:visited {	
 	text-decoration: none;
     color: white;
-    margin-left: 30pt;	
+}
+
+.header-name {
+	height: 0;
 }
 
 /* Footer */
@@ -134,10 +127,10 @@ div.container {
 	font-family: Montserrat Alternates;
 	font-weight: bold;
 	color: #152266;
-	font-size: 115pt;
-	margin-bottom: 10pt;
-	width: 275pt;
-	height: 140pt;
+	font-size: 120px;
+	margin-bottom: 10px;
+	width: 275px;
+	height: 140px;
 }
 
 /* Page Layout 
@@ -157,7 +150,7 @@ article.page h2 {
 	padding: 0;
 	font-family: Raleway;
 	font-weight: Bold;
-	font-size: 12.92pt;	
+	font-size: 12.92px;	
 }
 /*unordered list clears the float*/
 .category-nav ul:before, .category-nav ul:after { content: ""; display: table; }
@@ -171,7 +164,7 @@ article.page h2 {
 }
 
 .category-nav {	
-	margin-bottom: 0pt;	
+	margin-bottom: 0px;	
 }
 
 .category-nav a:link,
@@ -180,18 +173,18 @@ article.page h2 {
 	color: #d81159;	
 	text-align: center;  /*text-align, vertical-align and line-height helps to display the text in the center of the block*/
 	vertical-align: middle;
-	line-height: 31pt;
+	line-height: 31px;
 }
 
 .category-nav li a:link,
 .category-nav li a:visited
  {
 	display: block;
-	height: 31pt; /*height of the block*/
-	margin-right: 15pt; /*margin between each category block*/
-	border: 1pt solid #d81159;
-	padding-left: 20pt;
-	padding-right: 20pt;		
+	height: 31px; /*height of the block*/
+	margin-right: 15px; /*margin between each category block*/
+	border: 1px solid #d81159;
+	padding-left: 20px;
+	padding-right: 20px;		
 }
 
 .category-nav ul li.current-cat a:link,
@@ -226,24 +219,24 @@ article.page h2 {
 .post-date {
 	font-family: Raleway;
 	font-weight: Thin;
-	font-size: 12pt;
+	font-size: 12px;
 	color: #000000;
-	padding-top: 10pt;
-	margin-left: 260pt;
-	padding-bottom: 10pt;
+	padding-top: 10px;
+	margin-left: 26.0%;
+	padding-bottom: 10px;
 }
 
 /*author_pic style*/
 .avatar {
 	float: left;
-	height: 88pt;
-	width: 88pt;
-	margin-right: 10pt;
+	height: 88px;
+	width: 88px;
+	margin-right: 10px;
 	border-radius: 50%;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
-	padding-bottom: 0pt;
-	margin-bottom: 20pt;
+	padding-bottom: 0px;
+	margin-bottom: 20px;
 }
 
 /* Image Styles */
@@ -261,7 +254,7 @@ article.has-thumbnail {
 /* search*/
 div.header-search {
 	float: right;
-    margin-top: 0pt;	
+    margin-top: 0px;
 }
 /*To hide the "search for:" label*/
 div.header-search label {
@@ -274,31 +267,33 @@ div.header-search #searchsubmit {
 	background-color: #152266;
 	color: #FFF;
 	border: none;		
-	padding-top: 10pt;
-	padding-bottom: 10pt;
-	width: 28pt;
-	margin-left: -5pt;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	width: 28px;
+	height: 32px;
+	margin-left: -5px;
+	cursor: pointer;
 	
 } 
 
 /* align the header search box with the header icon with top edge*/
 div.header-search #s {
 	vertical-align: top;	
-	height: 28pt;
-	width: 141pt;
-	border: 1pt solid #D1D1D0;
+	height: 28px;
+	width: 141px;
+	border: 1px solid #D1D1D0;
 }
 
 /*read more in each post */
 .read-more {
 	display: block;
-	width: 87pt;
-	height: 31pt;
-	border: 1pt solid #d81159;	
+	width: 87px;
+	height: 31px;
+	border: 1px solid #d81159;	
 	float: right;
 	text-align: center;	
-	margin-right: 26pt;
-	margin-top: -26pt;
+	margin-right: 26px;
+	margin-top: -26px;
 }
 .read-more a:link,
 .read-more a:visited {	
@@ -306,32 +301,32 @@ div.header-search #s {
 	color: #d81159;	
 	font-family: Raleway;
 	font-weight: bold;
-	font-size: 12.92pt;
+	font-size: 12.92px;
 }
 
 /*category display in each post on all posts page */
 .cat-display a:link,
 .cat-display a:visited {
 	display: block;
-	margin-right: 17pt;
-	border: 1pt solid #d81159;	
+	margin-right: 17px;
+	border: 1px solid #d81159;	
 	text-decoration: none;
 	color: #d81159;
 	float: left;
 	font-family: Raleway;
 	font-weight: Bold;
-	font-size: 10.42pt;
-	padding-left: 16pt;
-	padding-right: 16pt;
-	height: 27.18pt;
+	font-size: 10.42px;
+	padding-left: 16px;
+	padding-right: 16px;
+	height: 27.18px;
 	vertical-align: middle;
 	text-align: center;
-	line-height: 27.18pt;
-	margin-top: -26pt;
+	line-height: 27.18px;
+	margin-top: -26px;
 }
 
 .cat-display a:first-child {
-	margin-left: 260pt;
+	margin-left: 260px;
 }
 
 
@@ -358,13 +353,13 @@ div.header-search #s {
 /*border around each post*/
 .post-border
 {	
-    padding-top:18pt;
-	padding-bottom: 18pt;
-	padding-left: 26pt;
-	margin-bottom: 26pt;
-	border:3pt solid #d81159;
-	height: 238pt;
-	width: 972pt;	
+    padding-top:18px;
+	padding-bottom: 18px;
+	padding-left: 26px;
+	margin-bottom: 26px;
+	border:3px solid #d81159;
+	height: 23.8%;
+	width: 97.2%; /*972px earlier fixed width*/	
 	
 }
 
@@ -373,44 +368,44 @@ div.header-search #s {
 {	
 	font-family: Raleway;
 	font-weight: Bold;
-	font-size: 40pt;
+	font-size: 40px;
 	text-decoration: none;
 	color: #d81159;	
 }
 
 /*display latest post in blue border and blue heading on main page*/
 .latest-post
-{	padding-top:18pt;
-	padding-bottom:18pt;
-	padding-left: 26pt; /*padding between left-border and heading text*/
-	margin-bottom: 26pt ; /*margin between the two block borders*/		
-	border:3pt solid #152266;
-	height: 238pt;
-	width: 972pt;
+{	padding-top:18px;
+	padding-bottom:18px;
+	padding-left: 26px; /*padding between left-border and heading text*/
+	margin-bottom: 26px ; /*margin between the two block borders*/		
+	border:3px solid #152266;
+	height: 23.8%;
+	width: 97.2%;
 }
 
 .latest-post h3 a:link,
 .latest-post h3 a:visited {
 	font-family: Raleway;
 	font-weight: Bold;
-	font-size: 40pt;
+	font-size: 40px;
 	text-decoration: none;
 	color: #152266;	
 }
 
 .post-thumbnail {
 	position: absolute;
-	margin-top: 5pt;	
+	margin-top: 5px;	
 }
 
 .excerpt {
 	font-family: Raleway;
 	font-weight: Medium;
-	font-size: 18pt;
-	width: 627pt;
-	height: 84pt;
-    padding-left: 260pt;
-	padding-bottom: 63pt;
+	font-size: 18px;
+	width: 62.7%; /*627px*/
+	height: auto; /*84px*/
+    padding-left: 26.0%;
+	padding-bottom: 63px;
 }
 
 /*post-heading in the details page*/
@@ -418,7 +413,7 @@ article.post p a:link,
 article.post p a:visited {
 	text-decoration: none;
 	color: #d81159;
-	font-size: 40pt;
+	font-size: 40px;
 	font-family: Raleway;
 	font-weight: Bold;
 }
@@ -427,17 +422,141 @@ article.post p a:visited {
 p.post-info {	
 	font-family: Raleway;
 	font-weight: Light;
-	font-size: 18pt;
+	font-size: 18px;
 	color: #152266;
-	padding-top: 15pt;
+	padding-top: 15px;
 }
 
 #single .category-nav {
-	margin-top: 33pt;
+	margin-top: 33px;
 }
 
+/*Media queries
 
+@media only screen and (max-width: 375px){
+	.site-header nav {
+		background-color: green;
+	}
+	
+	.site-nav {
+		display: none;
+		background-color: blue;
+	}
+	
+	body {
+	 width: 100%;
+	 color: red;
+	 padding-left: 5%;
+	 padding-right: 5%;
+	 font-size: 5px;
+	 
+	}
+	
+	.container {
+		width: 50%;
+	}
+	
+	.logo{
+		height: 10%;
+		width: 10%;
+		background-color: none;
+	}
+	
+	.excerpt{
+		width: 30%;
+		float: left;
+	}
+	
+	div.header-search {
+		width: 100%;
+	}
+	
+	#blog-title{
+		font-size: 5em;
+	}
+} */
 
+@media screen and (max-width: 480px){
+	
+	div.mobile-nav{
+		background-color: black;
+		padding: 0;
+		margin: 0;
+		display: none;
+	}
+	
+	div.mobile-nav ul li{
+		float: none;
+		font-size: 15px;
+		text-align: left;
+		width: 100%;
+	}
+	
+	div.mobile-nav ul li a:link{
+		color: black;
+	}
+
+	.site-header nav {
+		background-color: white;
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+	
+	.site-header nav ul li:first-child {
+		margin-left: 0px; 
+	}
+	
+	.header-name {
+		text-align: center;
+		font-size: 15px;
+		color: black;
+		background-color: skyblue;
+		height: 25px;
+		padding-top: 2px;
+	}
+	
+	.menu-trigger {	
+	    display: block;
+		float: right;		
+		cursor: pointer;
+		
+	}
+	
+	#blog-title {
+		font-size: 100%;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+	}
+	
+	.logo {
+		display: none;
+		width: 25%;
+		height: auto;
+	}
+	
+	.excerpt {
+		width: 80%;
+		
+	}
+	
+	img {
+		text-align: center;
+		margin: 0 auto;
+	}
+	
+	.latest-post {
+		margin: 10 10 10 10;
+		
+	}
+	
+	.header-search {
+		display: none;
+	}
+	
+	.category-nav ul li{
+		margin-bottom: 2%;
+	}
+}
 
 
 

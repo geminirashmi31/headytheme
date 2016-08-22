@@ -4,10 +4,10 @@
 function heady_script_enqueue() {
 	
 	wp_enqueue_style('style', get_stylesheet_uri());
+	wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js', array ( 'jquery' ), NULL, false);
 }
     
 add_action('wp_enqueue_scripts', 'heady_script_enqueue');
-
 
 
 // Get top ancestor
@@ -38,8 +38,8 @@ function heady_setup() {
 
     // Add featured image support
 	add_theme_support('post-thumbnails');
-	add_image_size('small-thumbnail', 243.11, 240, true);  // 182.33 * 180 in points
-	add_image_size('banner-image', 1329.33, 501.33, true); // this function considers size in pixels 997 * 376 pts
+	add_image_size('small-thumbnail', 182.33, 180, true);  // 182.33 * 180 in pixels
+	add_image_size('banner-image', 997, 376, true); // this function considers size in pixels 997 * 376
 }
 
 add_action('after_setup_theme', 'heady_setup');

@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
    <head>
 		<meta charset="<?php bloginfo('charset'); ?>">
-		<meta name="viewport" content="width=device-width"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title><?php bloginfo('name'); ?></title>
 		
 		<?php wp_head(); ?>
@@ -11,16 +11,20 @@
    <body <?php body_class(); ?>> <!-- it allows to target different pages with css very easily -->
    			 			
 			<div class="logo"><img src="http://localhost:81/wordpress/wp-content/uploads/2016/07/heady-logo.png"></div>
+			<!--<nav class="mobile-nav">
+				
+				 </nav>-->
 			<!-- site-header -->
-			<header class="site-header">
-             				
+			<header class="site-header"> 
+           	<div class="header-name">Heady				
+				<span class="menu-trigger">Menu</span></div>
 				<!-- site-nav -->
 				<nav class="site-nav">
-				
+				<div class="mobile-nav">
 				<?php $args = array('theme_location' => 'primary'); ?>						
-				<?php wp_nav_menu( $args); ?>
+				<?php wp_nav_menu( $args); ?></div>
 				</nav><!-- site-nav -->	
-		  
+		 
 			</header><!-- /site-header -->
 			<div class="container">
 			
