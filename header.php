@@ -8,24 +8,18 @@
 		<?php wp_head(); ?>
    </head>
   
-   <body <?php body_class(); ?>> <!-- it allows to target different pages with css very easily -->
-   			 			
-			<div class="logo"><img src="http://localhost:81/wordpress/wp-content/uploads/2016/07/heady-logo.png"></div>
-			<!--<nav class="mobile-nav">
-				
-				 </nav>-->
+   <body <?php body_class(); ?> > <!-- it allows to target different pages with css very easily -->
+   			 										
 			<!-- site-header -->
 			<header class="site-header"> 
-           	<div class="header-name">Heady				
-				<span class="menu-trigger">Menu</span></div>
+			<div class="logo"><img src="http://localhost:81/wordpress/wp-content/uploads/2016/07/heady-logo.png"></div>
 				<!-- site-nav -->
-				<nav class="site-nav">
-				<div class="mobile-nav">
-				<?php $args = array('theme_location' => 'primary'); ?>						
-				<?php wp_nav_menu( $args); ?></div>
-				</nav><!-- site-nav -->	
-		 
+				<nav class="site-nav">				
+						<?php $args = array('theme_location' => 'primary'); ?>						
+						<?php wp_nav_menu( $args); ?>					
+				</nav><!-- /site-nav -->			 
 			</header><!-- /site-header -->
+
 			<div class="container">
 			
 		<?php if ( is_page( 'blog' ) || is_category())
