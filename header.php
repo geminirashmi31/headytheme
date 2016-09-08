@@ -19,7 +19,16 @@
 						<?php wp_nav_menu( $args); ?>					
 				</nav><!-- /site-nav -->			 
 			</header><!-- /site-header -->
-
+						
+			<div id="myNav" class="overlay">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <div class="overlay-content">
+				<?php wp_nav_menu(); ?>
+			  </div>
+			</div>
+			
+			<span class="open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+			
 			<div class="container">
 			
 		<?php if ( is_page( 'blog' ) || is_category())
