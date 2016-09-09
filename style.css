@@ -448,6 +448,10 @@ p.post-info {
 	margin-top: 33px;
 }
 
+.overlay {
+	display: hide;
+}
+
 
 /*Media queries*/
 
@@ -513,7 +517,7 @@ p.post-info {
 
 #burgerNav {
 	background-color: skyblue;
-	margin-top: -45px;
+	
 }
 
 	
