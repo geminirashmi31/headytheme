@@ -11,6 +11,26 @@ html {
 	margin: 0;
 }
 
+@font-face{
+	font-family: "Raleway";
+	src: url('Raleway.eot') format('embedded-opentype'),
+	url('Raleway.ttf') format('opentype');
+} 
+
+@font-face{
+	font-family: "Raleway";
+	font-weight: medium;
+	src: url('RalewayMedium.eot') format('embedded-opentype'),
+	url('RalewayMedium.ttf') format('opentype');
+} 
+
+@font-face {
+    font-family: 'Raleway-Heavy';
+    src: url('../fonts/Raleway-Heavy.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
 	max-width: 100%;
 	padding: 0;
@@ -462,8 +482,8 @@ p.post-info {
     padding: 8px;
     text-decoration: none;	
     font-size: 70px;
-	font-family: MontserratAlternates;
-	font-weight: Bold;
+	font-family: MontserratAlternates-Bold;
+	font-weight: bold;
     color: #152266;
     display: inline-block;
     transition: 0.3s;
@@ -487,7 +507,13 @@ p.post-info {
 }
 
 .open {
+	
 	text-align: right;
+}
+
+#burgerNav {
+	background-color: skyblue;
+	margin-top: -45px;
 }
 
 	
@@ -534,8 +560,10 @@ p.post-info {
 	}
 	
 	.excerpt {
-		clear: both;
-		width: auto;		
+		width: auto;
+		margin-left: 0 px;
+		vertical-align: middle;
+		
 	}
 	
 	img {
@@ -562,7 +590,11 @@ p.post-info {
 	}
 	
 	.post-thumbnail {
-	
+		position: relative;
+		overflow: auto;
+		position: middle;
+		margin-left: 20%;
+		
 	}
 	
 	.cat-display {
