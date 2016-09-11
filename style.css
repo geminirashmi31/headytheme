@@ -35,18 +35,17 @@ body {
 	max-width: 100%;
 	padding: 0;
 	margin: 0;
-	font-family: Raleway;
-	font-weight: Medium;
+	font-family: Raleway-Medium;
 	font-size: 18px;
 	color: #000000;
 	position: relative;
 }
 
-p {
+/*p {
 	font-size: 18px;
 	
 }
-
+*/
 h2, h3, h4, h5, h6 {
 	margin: 0 0 0 0;
 }
@@ -126,7 +125,6 @@ div.container {
     color: white;
 }
 
-
 /* Footer */
 /*footer text*/
 .site-footer p {
@@ -142,9 +140,7 @@ div.container {
 	font-weight: bold;
 	color: #152266;
 	font-size: 120px;
-	margin-bottom: 10px;
-	width: 275px;
-	height: 140px;
+	margin-bottom: 15px;
 }
 
 /* Page Layout 
@@ -178,7 +174,7 @@ article.page h2 {
 }
 
 .category-nav {	
-	margin-bottom: 0px;	
+	margin-bottom: 25px;	
 }
 
 .category-nav a:link,
@@ -262,7 +258,8 @@ img {
 /*displaying on main page*/
 article.has-thumbnail {
 	position: relative;
-	
+	height:auto;
+	overflow: hidden;
 }
 
 /* search*/
@@ -286,8 +283,7 @@ div.header-search #searchsubmit {
 	width: 28px;
 	height: 32px;
 	margin-left: -5px;
-	cursor: pointer;
-	
+	cursor: pointer;	
 } 
 
 /* align the header search box with the header icon with top edge*/
@@ -301,16 +297,19 @@ div.header-search #s {
 /*read more in each post */
 .read-more {
 	display: block;
-	width: 87px;
+	padding-left:10px;
+	padding-right:10px;
 	height: 31px;
 	border: 1px solid #d81159;	
 	float: right;
 	text-align: center;	
-	bottom: 0px;
-	right: 1.7%;
-	position: absolute;
-	/*margin-right: 26px;
-	margin-top: -26px;*/
+	line-height: 31px;
+	vertical-align: middle;
+	
+
+	margin-right: 25px;
+	margin-top: -26px;
+	position: relative;
 }
 .read-more a:link,
 .read-more a:visited {	
@@ -325,7 +324,7 @@ div.header-search #s {
 .cat-display a:link,
 .cat-display a:visited {
 	display: block;
-	margin-right: 1.7%;  /*17px*/
+	margin-right: 17px; 
 	border: 1px solid #d81159;	
 	text-decoration: none;
 	color: #d81159;
@@ -398,7 +397,7 @@ div.header-search #s {
 	margin-bottom: 26px ; /*margin between the two block borders*/		
 	border:3px solid #152266;
 	height: auto;  /*23.8%*/
-	width: auto;  /*97.2%*/
+	width: auto;  /*97.2%*/ 
 }
 
 .latest-post h3 a:link,
@@ -419,8 +418,8 @@ div.header-search #s {
 	font-family: Raleway;
 	font-weight: Medium;
 	font-size: 18px;
-	width: 70%; /*627px*/
-	height: auto; /*84px*/
+	width: 70%;
+	height: auto;
     padding-left: 26.0%;
 	padding-bottom: 6.3%;
 }
@@ -435,6 +434,7 @@ article.post p a:visited {
 	font-weight: Bold;
 }
 
+
 /* Author and date in details page */
 p.post-info {	
 	font-family: Raleway;
@@ -448,14 +448,29 @@ p.post-info {
 	margin-top: 33px;
 }
 
-.overlay {
-	display: hide;
-}
-
 
 /*Media queries*/
 
-@media screen and (min-width: 320px) and (max-width: 1024px){	
+@media screen and (min-width: 1200px) and (max-width: 2560px){
+	.overlay{
+		display: none;
+	}
+	.open{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+/*-------------------------------------------- MEDIA QUERY FOR MOBILE DISPLAY --------------------------------------------*/
+
+
+@media screen and (min-width: 320px) and (max-width: 375px){	
 
 .site-header {
 	display: none;
@@ -499,7 +514,7 @@ p.post-info {
 }
 
 .overlay li a:hover {
-	border-bottom: 4px solid #d81159; 
+	border-bottom: 9px solid #d81159; 
 }
 
 .overlay .closebtn {
@@ -556,20 +571,123 @@ p.post-info {
 		cursor: pointer;			
 	}*/
 	
+	div.container {
+	max-width: 280px;
+	width: 100%;
+	margin: 0 auto; /*make the content center aligned*/
+}
+	
 	#blog-title {
-		font-size: 300%;
-		margin-top: 30px;
-		padding: 0 0 0 0;
-		margin-left: 10%;
+		font-size: 35px;
+		margin-top: 3px;
 	}
-	
-	.excerpt {
-		width: auto;
-		margin-left: 0 px;
-		vertical-align: middle;
 		
-	}
+/*category nav menu on home page*/
+
+.category-nav {
+		margin-top: 0px;
+		margin-bottom: 0px;
+}
 	
+.category-nav ul {
+	font-size: 10.42px;	
+}
+
+.category-nav a:link,
+.category-nav a:visited {
+	line-height: 25px;
+}
+
+.category-nav li a:link,
+.category-nav li a:visited
+ {
+	height: 25px; /*height of the block*/
+	margin-right: 12px; /*margin between each category block*/
+	margin-bottom: 12px;
+	padding-left: 15px;
+	padding-right: 15px;	
+}
+
+/*category-nav ends*/
+
+/*latest post in blue on home page*/
+.latest-post
+{
+	
+	padding-top:9px;
+	margin-top:0px;
+	padding-bottom:13px;
+	padding-left: 13px; /*padding between left-border and heading text*/
+	margin-bottom: 20px ; /*margin between the two block borders*/		
+	height: auto; 
+	width: auto; 
+	/*margin-left: 20px;
+	margin-right: 20px; */
+}
+
+.latest-post h3 a:link,
+.latest-post h3 a:visited {
+	font-size: 20px;	
+}
+
+/*----*/	
+	
+/*category display in each post on all posts page */
+
+.cat-display{
+	width:70%;
+}
+ .cat-display a:link,
+ .cat-display a:visited {
+	
+	font-size: 8.98px;
+	padding-left: 12px;
+	padding-right: 12px;
+	margin-right: 20px;
+	height: 22px;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 22px;
+	
+	margin-right: 10px;
+	float: left;
+	margin-top: 0px;
+	margin-bottom:7px;
+}
+
+.cat-display a:first-child {
+	margin-left: 0px;
+}
+
+/*----*/
+
+.post-thumbnail {
+	position: relative;
+	margin-top: 9px;
+	margin-left: 0px;
+	margin-bottom: 12px;
+}
+
+/*date style on main page*/
+.post-date {
+	font-size: 10px;
+	color: #000000;
+	margin-top: 12px;
+	margin-left: 0px;
+	padding-bottom: 10px;
+}
+/*---*/
+	.excerpt {
+	font-size: 15px;
+	width: 90%;
+	height: auto; 
+    padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-bottom: 6.3px;	
+	}
+		
 	img {
 		text-align: center;
 		margin: 0 auto;
@@ -578,69 +696,55 @@ p.post-info {
 	.header-search {
 		display: none;
 	}
-	
-	.category-nav{
-		margin-left: 10%;
-	}
-	
-	.category-nav ul li{
-		margin-bottom: 2%;
-		margin-right: 1px;
-		margin-left: 1px;
-	}
-	
-	article.has-thumbnail {
-		margin: 0 auto;
-	}
-	
-	.post-thumbnail {
-		position: relative;
-		overflow: auto;
-		position: middle;
-		margin-left: 20%;
-		
-	}
-	
-	.cat-display {
-		float: left;
-		margin-left: 25%;
-		
-	}
-	
-	.cat-display a:link,
-	.cat-display a:visited {
-		margin-right: 2px;
-		margin-left: 4px;
-	}
-	
-	.post-thumbnail {
-		margin-left: 0 auto;
-	}
-	
-	.post-border{
-		width: 80%;
-		margin-left: 10%;
-		margin-right: 10%;
-	}
-	
-	.latest-post{
-		width: 80%;
-		margin-left: 10%;
-		margin-right: 10%;
-	}
-	
-	.post-border h3 a:link,
-	.post-border h3 a:visited {
-		font-size: 27px;
-	}
-	
-	.latest-post h3 a:link,
-	.latest-post h3 a:visited {
-		font-size: 27px;
-	}
+
 			
+	/*border around each post*/
+.post-border
+{	
+    padding-top:9px;
+	padding-bottom:13px;
+	padding-left: 13px; /*padding between left-border and heading text*/
+	margin-bottom: 20px ; /*margin between the two block borders*/		
+	height: auto; 
+	width: auto; 	
+	
 }
 
+.post-border h3 a:link,
+.post-border h3 a:visited 
+{	
+	font-size: 20px;
+}
 
+.read-more{
+	height:26px;
+	line-height: 26px;
+	margin-top: 0px;
+	margin-right: 13px;
+}
 
+.read-more a:link,
+.read-more a:visited {
+	font-size:10px;
+}
+	
+/* FOR DETAILS PAGE */
+	
+/*post-heading in the details page*/
+article.post p a:link,
+article.post p a:visited {
+	font-size: 20px;
+}
 
+.avatar {
+	height: 83px;
+	width: 83px;
+}
+
+p.post-info {
+	font-size:15px;
+}
+
+body{
+	font-size: 15px;
+}

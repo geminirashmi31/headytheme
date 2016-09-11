@@ -28,8 +28,7 @@
 			  </div>
 			</div>
 			
-			
-			
+				
 			<div class="container">
 			
 		<?php if ( is_page( 'blog' ) || is_category())
