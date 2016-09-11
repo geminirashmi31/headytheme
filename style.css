@@ -6,6 +6,8 @@
  Version: 1.0.0
  */
 
+/*--------------- DEFAULT PAGE STYLE (DESKTOP)------------------*/ 
+
 html {
 	padding: 0;
 	margin: 0;
@@ -41,21 +43,15 @@ body {
 	position: relative;
 }
 
-/*p {
-	font-size: 18px;
-	
-}
-*/
-h2, h3, h4, h5, h6 {
-	margin: 0 0 0 0;
-}
-
 h1 {
 	font-size: 60px;
 }
 
+h2, h3, h4, h5, h6 {
+	margin: 0 0 0 0;
+}
 
-/* General Layout */
+/* Container Layout */
 div.container {
 	max-width: 1000px;
 	width: 100%;
@@ -75,6 +71,7 @@ div.container {
 	padding: 0;
 	display: block;	
 }
+
 /*unordered list clears the float*/
 .site-nav ul:before, .site-nav ul:after { content: ""; display: table; }
 .site-nav ul:after { clear: both; }
@@ -102,8 +99,7 @@ div.container {
 	color: #ffffff;
 	height: 61px;
     padding-top: 32px;	
-	display: block;
-	
+	display: block;	
 }
 
 .site-header nav ul li {	
@@ -143,12 +139,6 @@ div.container {
 	margin-bottom: 15px;
 }
 
-/* Page Layout 
-article.page h2 {
-	font-size: 225%;
-	margin-bottom: 15px;
-} */
-
 /* Clearfix */
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
@@ -162,6 +152,7 @@ article.page h2 {
 	font-weight: Bold;
 	font-size: 12.92px;	
 }
+
 /*unordered list clears the float*/
 .category-nav ul:before, .category-nav ul:after { content: ""; display: table; }
 .category-nav ul:after { clear: both; }
@@ -210,21 +201,6 @@ article.page h2 {
 	color: white;
  }
  
-
-/*.all-posts {
-	font-size: 12px;
-}
-
-.all-posts a:link,
-.all-posts a:visited
-{
-	text-decoration: none;
-	display: block;
-	color: #d81159;
-	float: left;
-} */
-
-
 /*date style on main page*/
 .post-date {
 	font-family: Raleway;
@@ -267,6 +243,7 @@ div.header-search {
 	float: right;
     margin-top: 0px;
 }
+
 /*To hide the "search for:" label*/
 div.header-search label {
 	position: absolute;
@@ -311,6 +288,7 @@ div.header-search #s {
 	margin-top: -26px;
 	position: relative;
 }
+
 .read-more a:link,
 .read-more a:visited {	
 	text-decoration: none;
@@ -345,27 +323,6 @@ div.header-search #s {
 	margin-left: 260px;
 }
 
-
-/*.site-content {
-	border: 3px solid #333;
-}
-
-.site-nav children-links clearfix a:link,
-.site-nav children-links clearfix a:visited {
-	text-decoration: none;
-	display: block;
-	margin-right: 20px;
-	border: 2px solid #d81159;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-.site-nav children-links clearfix.current-page-menu a:link,
-.site-nav children-links clearfix.current-page-menu a:visited {
-	background-color: #d81159;
-	color: white;	
-} */
-
 /*border around each post*/
 .post-border
 {	
@@ -375,8 +332,7 @@ div.header-search #s {
 	margin-bottom: 26px;
 	border:3px solid #d81159;
 	height: auto;
-	width: auto; /*972px earlier fixed width*/	
-	
+	width: auto;	
 }
 
 .post-border h3 a:link,
@@ -396,8 +352,8 @@ div.header-search #s {
 	padding-left: 26px; /*padding between left-border and heading text*/
 	margin-bottom: 26px ; /*margin between the two block borders*/		
 	border:3px solid #152266;
-	height: auto;  /*23.8%*/
-	width: auto;  /*97.2%*/ 
+	height: auto;
+	width: auto;  
 }
 
 .latest-post h3 a:link,
@@ -434,7 +390,6 @@ article.post p a:visited {
 	font-weight: Bold;
 }
 
-
 /* Author and date in details page */
 p.post-info {	
 	font-family: Raleway;
@@ -449,7 +404,9 @@ p.post-info {
 }
 
 
-/*Media queries*/
+
+/*-------------------------------------------- MEDIA QUERY FOR DESKTOP --------------------------------------------*/
+/* Need to hide the list menu to be displayed for smaller screen*/
 
 @media screen and (min-width: 1200px) and (max-width: 2560px){
 	.overlay{
@@ -462,12 +419,13 @@ p.post-info {
 
 
 
+/*-------------------------------------------- MEDIA QUERY FOR IPAD --------------------------------------------*/
+@media screen and (min-width: 376px) and (max-width: 1199px){
+	
+}
 
 
-
-
-
-/*-------------------------------------------- MEDIA QUERY FOR MOBILE DISPLAY --------------------------------------------*/
+/*-------------------------------------------- MEDIA QUERY FOR MOBILE --------------------------------------------*/
 
 
 @media screen and (min-width: 320px) and (max-width: 375px){	
@@ -535,55 +493,17 @@ p.post-info {
 	
 }
 
-	
-	/*div.mobile-nav{
-		background-color: black;
-		padding: 0;
-		margin: 0;
-		display: none;
-		position: relative;			
-	}
-	
-	div.mobile-nav ul li{
-		float: none;
-		font-size: 15px;
-		text-align: left;
-		width: 100%;		
-	}
-	
-	div.mobile-nav ul li a:link{
-		color: black;
-	}*/
-	
-	/*.header-name {
-		text-align: center;
-		font-size: 15px;
-		color: black;
-		background-color: skyblue;
-		height: 25px;
-		padding-top: 2px;
-		width: 100%;		
-	}
-	
-	.menu-trigger {	
-	    display: block;
-		float: right;		
-		cursor: pointer;			
-	}*/
-	
-	div.container {
+div.container {
 	max-width: 280px;
 	width: 100%;
 	margin: 0 auto; /*make the content center aligned*/
 }
 	
-	#blog-title {
+#blog-title {
 		font-size: 35px;
 		margin-top: 3px;
-	}
+}
 		
-/*category nav menu on home page*/
-
 .category-nav {
 		margin-top: 0px;
 		margin-bottom: 0px;
@@ -608,12 +528,8 @@ p.post-info {
 	padding-right: 15px;	
 }
 
-/*category-nav ends*/
-
-/*latest post in blue on home page*/
 .latest-post
 {
-	
 	padding-top:9px;
 	margin-top:0px;
 	padding-bottom:13px;
@@ -621,8 +537,6 @@ p.post-info {
 	margin-bottom: 20px ; /*margin between the two block borders*/		
 	height: auto; 
 	width: auto; 
-	/*margin-left: 20px;
-	margin-right: 20px; */
 }
 
 .latest-post h3 a:link,
@@ -630,25 +544,20 @@ p.post-info {
 	font-size: 20px;	
 }
 
-/*----*/	
-	
-/*category display in each post on all posts page */
-
 .cat-display{
 	width:70%;
 }
- .cat-display a:link,
- .cat-display a:visited {
-	
+
+.cat-display a:link,
+.cat-display a:visited 
+{	
 	font-size: 8.98px;
 	padding-left: 12px;
 	padding-right: 12px;
-	margin-right: 20px;
 	height: 22px;
 	vertical-align: middle;
 	text-align: center;
-	line-height: 22px;
-	
+	line-height: 22px;	
 	margin-right: 10px;
 	float: left;
 	margin-top: 0px;
@@ -659,8 +568,6 @@ p.post-info {
 	margin-left: 0px;
 }
 
-/*----*/
-
 .post-thumbnail {
 	position: relative;
 	margin-top: 9px;
@@ -668,7 +575,6 @@ p.post-info {
 	margin-bottom: 12px;
 }
 
-/*date style on main page*/
 .post-date {
 	font-size: 10px;
 	color: #000000;
@@ -676,8 +582,8 @@ p.post-info {
 	margin-left: 0px;
 	padding-bottom: 10px;
 }
-/*---*/
-	.excerpt {
+
+.excerpt {
 	font-size: 15px;
 	width: 90%;
 	height: auto; 
@@ -686,19 +592,19 @@ p.post-info {
 	margin-left: 0px;
 	margin-right: 0px;
 	padding-bottom: 6.3px;	
-	}
+}
 		
-	img {
+img {
 		text-align: center;
 		margin: 0 auto;
-	}
+}
 	
-	.header-search {
+.header-search {
 		display: none;
-	}
+}
 
 			
-	/*border around each post*/
+/*border around each post*/
 .post-border
 {	
     padding-top:9px;
@@ -706,8 +612,7 @@ p.post-info {
 	padding-left: 13px; /*padding between left-border and heading text*/
 	margin-bottom: 20px ; /*margin between the two block borders*/		
 	height: auto; 
-	width: auto; 	
-	
+	width: auto; 		
 }
 
 .post-border h3 a:link,
@@ -728,7 +633,9 @@ p.post-info {
 	font-size:10px;
 }
 	
-/* FOR DETAILS PAGE */
+	
+	
+/*-------------- FOR DETAILS PAGE --------------------*/
 	
 /*post-heading in the details page*/
 article.post p a:link,
