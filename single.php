@@ -7,7 +7,7 @@ get_header(); ?>
 		<?php get_search_form(); ?>
 		</div>
 	<!-- /header-search -->
-	<div id="single">
+	<div class="single">
 	<nav class="category-nav"><ul><?php wp_list_cats(); ?></ul></nav></div>
 	
 <?php if (have_posts()) : ?>

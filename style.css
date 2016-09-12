@@ -328,6 +328,8 @@ nav.category-nav li.current-cat a:link
 img {
 	max-width: 100%;
 	height: auto;
+	margin: auto;  /*margin and display to center the image for thumbnail*/
+	display: block;
 }
 
 /*displaying on main page*/
@@ -489,7 +491,7 @@ p.post-info {
 	padding-top: 15px;
 }
 
-#single .category-nav {
+.single .category-nav {
 	margin-top: 33px;
 }
 
@@ -537,12 +539,11 @@ p.post-info {
 .overlay a {
     padding: 8px;
     text-decoration: none;	
-    font-size: 70px;
-	font-family: Montserrat Alternates;
-	font-weight: bold;
+    font-size: 43.86px;
+	font-family: Montserrat-Bold;
     color: #152266;
     display: inline-block;
-    transition: 0.3s;
+    transition: 0s;
 	text-transform: lowercase;
 }
 
@@ -551,7 +552,7 @@ p.post-info {
 }
 
 .overlay li a:hover {
-	border-bottom: 9px solid #d81159; 
+	border-bottom: 5px solid #d81159; 
 }
 
 .overlay .closebtn {
@@ -599,7 +600,7 @@ div.container {
 	margin-right: 13px;
 }
 
-#single .category-nav {
+.single .category-nav {
 	margin-top: 50px;
 }
 
@@ -615,10 +616,10 @@ div.mobile-search {
 
 div.mobile-search #s {
 	width: 100%;
-	background: url("http://localhost:81/wordpress/wp-content/uploads/2016/09/SearchIcon.png") no-repeat center center;
+	background: url("http://localhost:81/wordpress/wp-content/uploads/2016/09/SearchIconMobile.png") no-repeat center center;
 	background-color: lightgrey;	
 	text-align: center;
-	text-indent:45px;
+	text-indent:55px;
 	height: 35px;
 	border-radius: 5px 5px 5px 5px;	
 	border: none;
@@ -626,6 +627,7 @@ div.mobile-search #s {
 
 div.mobile-search #s:focus{
 	background:none;
+	background-color: lightgrey;
 }
 
 div.mobile-search #searchsubmit {	
@@ -638,17 +640,131 @@ div.mobile-search #searchsubmit {
 
 /*-------------------------------------------- MEDIA QUERY FOR IPAD (768px- 1024px)  --------------------------------------------*/
 @media screen and (min-width: 768px) and (max-width: 1024px){
+	
+.overlay a {
+	font-size: 70px;
+}
+
+.overlay li a:hover {
+	border-bottom: 9px solid #d81159; 
+}
+
+#blog-title {
+		font-size: 75px;
+}
+#burgerNav {	
+	height: 80px;
+	background: url("http://localhost:81/wordpress/wp-content/uploads/2016/09/LogoIpad.png"), 
+				url("http://localhost:81/wordpress/wp-content/uploads/2016/09/HeadyIpad.png");
+	background-position: left top, center;			
+	background-repeat: no-repeat; 
+	background-color: #B8F0F6;
+}
 .excerpt, .post-date, .cat-display a:first-child {
 	margin-left: 200px;
 }
 
+.category-nav a:link,
+.category-nav a:visited {
+	line-height: 29px;
+}
+
+.category-nav li a:link,
+.category-nav li a:visited
+ {
+	height: 29px; /*height of the block*/
+	margin-right: 13px; /*margin between each category block*/
+	margin-bottom: 0px;
+	padding-left: 18px;
+	padding-right: 18px;
+	font-size: 11.9px;	
+}
+
+.latest-post h3 a:link,
+.latest-post h3 a:visited {
+	font-size: 30px;	
+}
+
+.post-border h3 a:link,
+.post-border h3 a:visited 
+{	
+	font-size: 30px;
+}
+/*excerpt same as mobile*/
+.excerpt {
+	font-size: 15px;
+}
+
+.cat-display{
+	width:70%;
+	margin-left: 200px;
+}
+
+
+/*same as mobile*/
+.cat-display a:link,
+.cat-display a:visited 
+{	
+	font-size: 8.98px; /*same as mobile*/
+	padding-left: 12px;
+	padding-right: 12px;
+	height: 22px;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 22px;	
+	margin-right: 10px;
+	margin-top: 0px;
+	margin-bottom:0px;
+}
+
+.cat-display a:first-child {
+	margin-left: 0px;
+}
+
+/*post-date same as mobile*/
+
+.post-date {
+	font-size: 10px;
+}
+
+/*same as mobile*/
+.read-more{
+	height:26px;
+	line-height: 26px;
+	margin-top: 0px;
+	margin-right: 13px;
+}
+
+.read-more a:link,
+.read-more a:visited {
+	font-size:10px;
+}
+
+
+/*-------------- FOR DETAILS PAGE --------------------*/
+/*post-heading in the details page*/
+article.post p a:link,
+article.post p a:visited {
+	font-size: 30px;
+}
+
+.avatar {
+	height: 88px;
+	width: 88px;
+}
+
+p.post-info {
+	font-size:15px;
+}
+
+body{
+	font-size: 15px;
+}
 }
 
 /*-------------------------------------------- MEDIA QUERY FOR MOBILE --------------------------------------------*/
 
 @media screen and (min-width: 320px) and (max-width: 767px){	
-
-
 
 	
 div.container {
@@ -667,7 +783,7 @@ div.container {
 }
 	
 .category-nav ul {
-	font-size: 10.42px;	
+	
 }
 
 .category-nav a:link,
@@ -682,7 +798,8 @@ div.container {
 	margin-right: 12px; /*margin between each category block*/
 	margin-bottom: 12px;
 	padding-left: 15px;
-	padding-right: 15px;	
+	padding-right: 15px;
+	font-size: 10.42px;	
 }
 
 .latest-post
@@ -718,7 +835,7 @@ div.container {
 	margin-right: 10px;
 	float: left;
 	margin-top: 0px;
-	margin-bottom:7px;
+	margin-bottom:0px;
 }
 
 .cat-display a:first-child {
@@ -728,7 +845,6 @@ div.container {
 .post-thumbnail {
 	position: relative;
 	margin-top: 9px;
-	margin-left: 0px;
 	margin-bottom: 12px;
 }
 
