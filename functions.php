@@ -25,7 +25,7 @@ function get_top_ancestor_id() {
 
 // Customize excerpt word count length
 function custom_excerpt_length() {
-	return 50;
+	return 25;
 }
 
 add_filter('excerpt_length', 'custom_excerpt_length');

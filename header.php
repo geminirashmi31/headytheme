@@ -20,9 +20,9 @@
 				</nav><!-- /site-nav -->			 
 			</header><!-- /site-header -->
 			
-			<div id="burgerNav" <span class="open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span></div>			
+			<div id="burgerNav" <span class="open" style="font-size:30px;cursor:pointer" onclick="openNav()"> </span></div>		
 			<div id="myNav" class="overlay">
-			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="http://localhost:81/wordpress/wp-content/uploads/2016/09/x_button.png"></a>
 			  <div class="overlay-content">
 				<?php wp_nav_menu(); ?>
 			  </div>

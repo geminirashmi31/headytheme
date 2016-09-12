@@ -571,8 +571,9 @@ p.post-info {
 #burgerNav {	
 	height: 51px;
 	background: url("http://localhost:81/wordpress/wp-content/uploads/2016/09/mobile-Logo.png"), 
-				url("http://localhost:81/wordpress/wp-content/uploads/2016/09/mobile-Heady.png");
-	background-position: left top, center;			
+				url("http://localhost:81/wordpress/wp-content/uploads/2016/09/mobile-Heady.png"),
+				url("http://localhost:81/wordpress/wp-content/uploads/2016/09/Menu.png");
+	background-position: left top, center, right center;			
 	background-repeat: no-repeat; 
 	background-color: #B8F0F6;
 	
@@ -638,8 +639,8 @@ div.mobile-search #searchsubmit {
 
 
 
-/*-------------------------------------------- MEDIA QUERY FOR IPAD (768px- 1024px)  --------------------------------------------*/
-@media screen and (min-width: 768px) and (max-width: 1024px){
+/*-------------------------------------------- MEDIA QUERY FOR IPAD (601px- 1024px)  --------------------------------------------*/
+@media screen and (min-width: 601px) and (max-width: 1024px){
 	
 .overlay a {
 	font-size: 70px;
@@ -655,8 +656,9 @@ div.mobile-search #searchsubmit {
 #burgerNav {	
 	height: 80px;
 	background: url("http://localhost:81/wordpress/wp-content/uploads/2016/09/LogoIpad.png"), 
-				url("http://localhost:81/wordpress/wp-content/uploads/2016/09/HeadyIpad.png");
-	background-position: left top, center;			
+				url("http://localhost:81/wordpress/wp-content/uploads/2016/09/HeadyIpad.png"),
+				url("http://localhost:81/wordpress/wp-content/uploads/2016/09/Menu-Ipad.png");
+	background-position: left top, center, right center;			
 	background-repeat: no-repeat; 
 	background-color: #B8F0F6;
 }
@@ -690,13 +692,14 @@ div.mobile-search #searchsubmit {
 {	
 	font-size: 30px;
 }
-/*excerpt same as mobile*/
+
 .excerpt {
-	font-size: 15px;
+	font-size: 15px; /*font same as mobile*/
+	padding-bottom: 6.3px;
 }
 
 .cat-display{
-	width:70%;
+	width:40%;
 	margin-left: 200px;
 }
 
@@ -714,7 +717,7 @@ div.mobile-search #searchsubmit {
 	line-height: 22px;	
 	margin-right: 10px;
 	margin-top: 0px;
-	margin-bottom:0px;
+	margin-bottom:10px;
 }
 
 .cat-display a:first-child {
@@ -764,7 +767,7 @@ body{
 
 /*-------------------------------------------- MEDIA QUERY FOR MOBILE --------------------------------------------*/
 
-@media screen and (min-width: 320px) and (max-width: 767px){	
+@media screen and (min-width: 320px) and (max-width: 600px){	
 
 	
 div.container {
@@ -796,7 +799,7 @@ div.container {
  {
 	height: 25px; /*height of the block*/
 	margin-right: 12px; /*margin between each category block*/
-	margin-bottom: 12px;
+	margin-bottom: 11px;
 	padding-left: 15px;
 	padding-right: 15px;
 	font-size: 10.42px;	
@@ -805,7 +808,7 @@ div.container {
 .latest-post
 {
 	padding-top:9px;
-	margin-top:0px;
+	margin-top:-20px;
 	padding-bottom:13px;
 	padding-left: 13px; /*padding between left-border and heading text*/
 	margin-bottom: 20px ; /*margin between the two block borders*/		
@@ -835,7 +838,7 @@ div.container {
 	margin-right: 10px;
 	float: left;
 	margin-top: 0px;
-	margin-bottom:0px;
+	margin-bottom:7px;
 }
 
 .cat-display a:first-child {
