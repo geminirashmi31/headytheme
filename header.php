@@ -28,6 +28,9 @@
 			  </div>
 			</div>
 			
+			<div class="mobile-search">
+			<?php get_search_form(); ?>
+			</div>
 				
 			<div class="container">
 			
