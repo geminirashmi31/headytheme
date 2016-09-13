@@ -17,7 +17,7 @@ get_header();?>
 
 <?php
 
-if (is_category('all-posts'))
+if (is_search() || is_category('all-posts'))
 {
 	$count =0; 
 	while (have_posts()) : the_post(); ?>
@@ -26,7 +26,8 @@ if (is_category('all-posts'))
 	<div class="latest-post">
 	<?php else: ?>
 	<div class="post-border">
-	<?php endif; ?>						
+	<?php endif; ?>
+						
 		<?php get_template_part('content'); ?>  </div>
 	 <?php endwhile;?></div>
     <?php
@@ -35,7 +36,8 @@ if (is_category('all-posts'))
 else
 { 
     while (have_posts()) : the_post(); ?>
-      <div class="post-border">	  					
+      <div class="post-border">
+	  					
        <?php get_template_part('content'); ?></div>
 	   <?php endwhile;
 } ?>

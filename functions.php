@@ -45,7 +45,7 @@ function heady_setup() {
 add_action('after_setup_theme', 'heady_setup');
 
 // filter to add the categories list in single post
- function sgr_show_current_cat_on_single($output) {
+ function show_current_cat_on_single($output) {
      global $post;
      if( is_single() ) {
           $categories = wp_get_post_categories($post->ID);
@@ -62,7 +62,18 @@ add_action('after_setup_theme', 'heady_setup');
      return $output;
 }
 
-add_filter('wp_list_categories', 'sgr_show_current_cat_on_single');
+add_filter('wp_list_categories', 'show_current_cat_on_single');
+
+// highlight search terms in search results
+function highlight_search_term($text){
+    if(is_search()){
+		$keys = implode('|', explode(' ', get_search_query()));
+		$text = preg_replace('/(' . $keys .')/iu', '<span class="search-term">\0</span>', $text);
+	}
+    return $text;
+}
+add_filter('get_the_excerpt', 'highlight_search_term');
+add_filter('the_title', 'highlight_search_term');
 
 
 

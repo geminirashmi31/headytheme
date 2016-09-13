@@ -501,6 +501,12 @@ p.post-info {
 }
 
 
+span.search-term{
+	background-color: yellow;
+	font-weight: bold;
+}
+
+
 
 /*-------------------------------------------- MEDIA QUERY FOR DESKTOP --------------------------------------------*/
 /* Need to hide the list menu to be displayed for smaller screen*/
