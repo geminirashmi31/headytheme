@@ -451,13 +451,10 @@ div.header-search #s {
 	width: auto;  
 }
 
-/*.latest-post h3 a:link,
-.latest-post h3 a:visited {
-	font-family: Raleway-Bold;
-	font-size: 40px;
-	text-decoration: none;
+.latest-post article.has-thumbnail h3 a:link,
+.latest-post article.has-thumbnail h3 a:visited {	
 	color: #152266;	
-}*/
+}
 
 .post-thumbnail {
 	position: absolute;
