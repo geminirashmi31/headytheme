@@ -431,14 +431,14 @@ div.header-search #s {
 	width: auto;	
 }
 
-.post-border h3 a:link,
+/*.post-border h3 a:link,
 .post-border h3 a:visited 
 {	
 	font-family: Raleway-Bold;
 	font-size: 40px;
 	text-decoration: none;
 	color: #d81159;	
-}
+}*/
 
 /*display latest post in blue border and blue heading on main page*/
 .latest-post
@@ -451,17 +451,25 @@ div.header-search #s {
 	width: auto;  
 }
 
-.latest-post h3 a:link,
+/*.latest-post h3 a:link,
 .latest-post h3 a:visited {
 	font-family: Raleway-Bold;
 	font-size: 40px;
 	text-decoration: none;
 	color: #152266;	
-}
+}*/
 
 .post-thumbnail {
 	position: absolute;
-	margin-top: 5px;	
+	margin-top: 0px;	
+}
+
+article.has-thumbnail h3 a:link,
+article.has-thumbnail h3 a:visited {
+	font-family: Raleway-Bold;
+	font-size: 40px;
+	text-decoration: none;
+	color: #d81159;	
 }
 
 .excerpt {
@@ -572,7 +580,7 @@ p.post-info {
 	height: 51px;
 	background: url("http://localhost:81/wordpress/wp-content/uploads/2016/09/mobile-Logo.png"), 
 				url("http://localhost:81/wordpress/wp-content/uploads/2016/09/mobile-Heady.png"),
-				url("http://localhost:81/wordpress/wp-content/uploads/2016/09/Menu.png");
+				url("http://localhost:81/wordpress/wp-content/uploads/2016/09/Menu.png ");
 	background-position: left top, center, right center;			
 	background-repeat: no-repeat; 
 	background-color: #B8F0F6;
@@ -682,16 +690,16 @@ div.mobile-search #searchsubmit {
 	font-size: 11.9px;	
 }
 
-.latest-post h3 a:link,
-.latest-post h3 a:visited {
+article.has-thumbnail h3 a:link,
+article.has-thumbnail h3 a:visited {
 	font-size: 30px;	
 }
 
-.post-border h3 a:link,
+/*.post-border h3 a:link,
 .post-border h3 a:visited 
 {	
 	font-size: 30px;
-}
+}*/
 
 .excerpt {
 	font-size: 15px; /*font same as mobile*/
@@ -805,19 +813,19 @@ div.container {
 	font-size: 10.42px;	
 }
 
-.latest-post
+/*.latest-post
 {
 	padding-top:9px;
 	margin-top:-20px;
 	padding-bottom:13px;
 	padding-left: 13px; /*padding between left-border and heading text*/
-	margin-bottom: 20px ; /*margin between the two block borders*/		
-	height: auto; 
+	/*margin-bottom: 20px ; /*margin between the two block borders*/		
+	/*height: auto; 
 	width: auto; 
-}
+}*/
 
-.latest-post h3 a:link,
-.latest-post h3 a:visited {
+article.has-thumbnail h3 a:link,
+article.has-thumbnail h3 a:visited {
 	font-size: 20px;	
 }
 

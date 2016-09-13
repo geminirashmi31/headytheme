@@ -17,7 +17,9 @@ if(have_posts()) :
 		   <?php wp_list_pages($args); ?>
 	   </ul>
 	   </nav>
-     
+			<h2><?php the_title(); ?></h2>
+			<?php the_content(); ?>
+			<?php get_template_part('content'); ?> 
    </article>
    
    <?php endwhile;
