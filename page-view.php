@@ -12,7 +12,7 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 
 <?php if ( $wpb_all_query->have_posts() ) : ?>
 
-<ul>	
+	
 	<?php $count =0; ?>
     <!-- the loop -->
     <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>	
@@ -25,9 +25,10 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 	<?php endif; ?>
 						
 	<?php get_template_part('content'); ?></div>
+	
     <?php endwhile; ?>
     <!-- end of the loop -->
-</ul>
+
 
     <?php wp_reset_postdata(); ?></div>
 
