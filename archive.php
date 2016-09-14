@@ -18,7 +18,7 @@ get_header();?>
 <?php
 
     while (have_posts()) : the_post(); ?>
-      	 <div class="post-border"> 					
+      	 <div class="other-post-border"> 					
        <?php get_template_part('content'); ?></div>
 	   <?php endwhile;
  ?>

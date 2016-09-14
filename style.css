@@ -419,7 +419,7 @@ div.header-search #s {
 }
 
 /*border around each post*/
-.post-border
+.other-post-border
 {	
     padding-top:18px;
 	padding-bottom: 18px;
@@ -432,7 +432,7 @@ div.header-search #s {
 
 
 /*display latest post in blue border and blue heading on All posts page*/
-.latest-post
+.latest-post-border
 {	padding-top:18px;
 	padding-bottom:18px;
 	padding-left: 26px; /*padding between left-border and heading text*/
@@ -442,8 +442,8 @@ div.header-search #s {
 	width: auto;  
 }
 
-.latest-post article.has-thumbnail h3 a:link,
-.latest-post article.has-thumbnail h3 a:visited {	
+.latest-post-border article.has-thumbnail h3 a:link,
+.latest-post-border article.has-thumbnail h3 a:visited {	
 	color: #152266;	
 }
 
@@ -806,17 +806,6 @@ div.container {
 	font-size: 10.42px;	
 }
 
-/*.latest-post
-{
-	padding-top:9px;
-	margin-top:-20px;
-	padding-bottom:13px;
-	padding-left: 13px; /*padding between left-border and heading text*/
-	/*margin-bottom: 20px ; /*margin between the two block borders*/		
-	/*height: auto; 
-	width: auto; 
-}*/
-
 article.has-thumbnail h3 a:link,
 article.has-thumbnail h3 a:visited {
 	font-size: 20px;	
@@ -877,7 +866,7 @@ img {
 }
 				
 /*border around each post*/
-.post-border
+.other-post-border
 {	
     padding-top:9px;
 	padding-bottom:13px;
@@ -887,8 +876,8 @@ img {
 	width: auto; 		
 }
 
-.post-border h3 a:link,
-.post-border h3 a:visited 
+.other-post-border h3 a:link,
+.other-post-border h3 a:visited 
 {	
 	font-size: 20px;
 }

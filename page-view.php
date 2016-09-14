@@ -19,9 +19,9 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 	
 	<?php $count++; ?>
 	<?php if ($count == 1) : ?>
-		<div class="latest-post">
+		<div class="latest-post-border">
 	<?php else: ?>
-		<div class="post-border">
+		<div class="other-post-border">
 	<?php endif; ?>
 						
 	<?php get_template_part('content'); ?></div>
