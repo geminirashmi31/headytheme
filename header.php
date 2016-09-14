@@ -34,7 +34,7 @@
 				
 			<div class="container">
 			
-		<?php if ( is_page( 'blog' ) || is_category())
+		<?php if ( is_page( 'blog' ) || is_page( 'view' ) || is_category())
 		{ ?>	
 			<div id="blog-title"><?php bloginfo('name'); ?> </div>
 			<!-- header-search -->

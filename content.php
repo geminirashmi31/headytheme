@@ -1,5 +1,5 @@
 <article class="has-thumbnail">
-
+		
 		<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
               
 		<!-- post-thumbnail -->
@@ -11,8 +11,8 @@
 					
 		<div class="excerpt">
 		
-		<?php if ( is_search() || is_archive() || is_home()) { 
-		echo get_the_excerpt(); } ?></div>
+		
+		<?php echo get_the_excerpt(); ?></div>
 		
 		<div class="cat-display">	                 
 			<?php $categories = get_the_category();		
@@ -32,8 +32,9 @@
 			} 
 		?></div>
 		
-		<?php if ( is_search() || is_archive() || is_home()) { ?>
+		<?php if ( is_search() || is_archive() || is_page('All Posts') ) { ?>
 			<div class="read-more"><a href="<?php the_permalink(); ?>">Read More</a></div>
 		<?php } ?> 
+		
 		
 	</article>

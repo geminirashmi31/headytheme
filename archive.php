@@ -2,8 +2,8 @@
 get_header();?>
 						
  <?php if (have_posts()) : ?>
- 
- <nav class="category-nav"><ul><?php wp_list_cats(); ?></ul></nav>
+  
+ <nav class="category-nav"><ul><?php  wp_list_pages('include=176&title_li=');  wp_list_cats(); ?></ul></nav>
 
 <h2><ul><?php
 		if ( is_category() ) {
@@ -17,29 +17,11 @@ get_header();?>
 
 <?php
 
-if (is_category('all-posts')|| is_home())
-{
-	$count =0; 
-	while (have_posts()) : the_post(); ?>
-	<?php $count++; ?>
-	<?php if ($count == 1) : ?>
-	<div class="latest-post">
-	<?php else: ?>
-	<div class="post-border">
-	<?php endif; ?>
-						
-		<?php get_template_part('content'); ?>  </div>
-	 <?php endwhile;?></div>
-    <?php
- }
-else
-{ 
     while (have_posts()) : the_post(); ?>
-      <div class="post-border">
-	  					
+      	 <div class="post-border"> 					
        <?php get_template_part('content'); ?></div>
 	   <?php endwhile;
-} ?>
+ ?>
 	
 	 <?php else :
 	echo '<p>No content found</p>'; 

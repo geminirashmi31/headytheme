@@ -8,7 +8,9 @@ get_header(); ?>
 		</div>
 	<!-- /header-search -->
 	<div class="single">
-	<nav class="category-nav"><ul><?php wp_list_cats(); ?></ul></nav></div>
+	<nav class="category-nav"><ul><?php  wp_list_pages('include=176&title_li=');  wp_list_cats(); ?></ul></nav></div>
+	
+	
 	
 <?php if (have_posts()) : ?>
 

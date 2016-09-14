@@ -10,7 +10,7 @@ function heady_script_enqueue() {
 add_action('wp_enqueue_scripts', 'heady_script_enqueue');
 
 
-// Get top ancestor
+/* Get top ancestor
 function get_top_ancestor_id() {
 	
 	global $post;
@@ -21,7 +21,7 @@ function get_top_ancestor_id() {
 	}
 	
 	return $post->ID;
-}
+} */
 
 // Customize excerpt word count length
 function custom_excerpt_length() {

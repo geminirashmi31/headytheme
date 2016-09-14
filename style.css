@@ -301,6 +301,13 @@ nav.category-nav li.current-cat a:link
 	color: white;
  }
  
+nav.category-nav ul li.current_page_item a:link,
+nav.category-nav ul li.current_page_item a:visited
+ {
+	background-color: #d81159;
+	color: white;	
+ }
+ 
 /*date style on main page*/
 .post-date {
 	font-family: Raleway-Thin;
@@ -504,6 +511,12 @@ p.post-info {
 span.search-term{
 	background-color: yellow;
 	font-weight: bold;
+}
+
+/*Children links*/
+
+.children-links {
+	
 }
 
 
