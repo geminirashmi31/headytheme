@@ -11,7 +11,7 @@
 					
 		<div class="excerpt">
 		
-		<?php if ( is_search() || is_archive()) { 
+		<?php if ( is_search() || is_archive() || is_home()) { 
 		echo get_the_excerpt(); } ?></div>
 		
 		<div class="cat-display">	                 
@@ -32,7 +32,7 @@
 			} 
 		?></div>
 		
-		<?php if ( is_search() || is_archive()) { ?>
+		<?php if ( is_search() || is_archive() || is_home()) { ?>
 			<div class="read-more"><a href="<?php the_permalink(); ?>">Read More</a></div>
 		<?php } ?> 
 		

@@ -17,7 +17,7 @@ get_header();?>
 
 <?php
 
-if (is_search() || is_category('all-posts'))
+if (is_category('all-posts')|| is_home())
 {
 	$count =0; 
 	while (have_posts()) : the_post(); ?>
@@ -32,7 +32,6 @@ if (is_search() || is_category('all-posts'))
 	 <?php endwhile;?></div>
     <?php
  }
-
 else
 { 
     while (have_posts()) : the_post(); ?>
