@@ -350,7 +350,7 @@ div.header-search {
 }
 
 div.header-search #searchsubmit {	
-	background: url("http://localhost:81/wordpress/wp-content/uploads/2016/09/SearchIcon.png") center center no-repeat; /*to display the search icon in center*/
+	background: url("/wordpress/wp-content/themes/headytheme/images/SearchIcon.png") center center no-repeat; /*to display the search icon in center*/
 	background-color: #152266;
 	color: #FFF;
 	border: none;		
@@ -498,7 +498,7 @@ span.search-term{
 }
 
 
-/*-------------------------------------------- MEDIA QUERY FOR DESKTOP --------------------------------------------*/
+/*-------------------------------------------- MEDIA QUERY FOR DESKTOP (1025px- 2560px)--------------------------------------------*/
 /* Need to hide the list menu to be displayed for smaller screen*/
 
 @media screen and (min-width: 1025px) and (max-width: 2560px){
@@ -509,10 +509,11 @@ span.search-term{
 
 
 
-/*-------------------------------------------- COMMON MEDIA QUERY FOR MOBILE AND IPAD --------------------------------------------*/
+/*-------------------------------------------- COMMON MEDIA QUERY FOR MOBILE AND IPAD (320px- 1024px)--------------------------------------------*/
 @media screen and (min-width: 320px) and (max-width: 1024px){
-	
-.site-header {
+
+/*To hide desktop navigation menu and search from ipad and mobile*/	
+.site-header, .header-search {
 	display: none;
 }
 
@@ -539,8 +540,7 @@ span.search-term{
 
 .overlay a {
     padding: 8px;
-    text-decoration: none;	
-    font-size: 43.86px;
+    text-decoration: none;	   
 	font-family: Montserrat-Bold;
     color: #152266;
     display: inline-block;
@@ -550,10 +550,6 @@ span.search-term{
 
 .overlay-content ul li {
 	list-style: none;
-}
-
-.overlay li a:hover {
-	border-bottom: 5px solid #d81159; 
 }
 
 .overlay .closebtn {
@@ -569,46 +565,46 @@ span.search-term{
 	text-align: right;
 }
 
-#burgerNav {	
-	height: 51px;
-	background: url("http://localhost:81/wordpress/wp-content/uploads/2016/09/mobile-Logo.png"), 
-				url("http://localhost:81/wordpress/wp-content/uploads/2016/09/mobile-Heady.png"),
-				url("http://localhost:81/wordpress/wp-content/uploads/2016/09/Menu.png ");
-	background-position: left top, center, right center;			
-	background-repeat: no-repeat; 
-	background-color: #B8F0F6;
-	
-}
-
 div.container {
 	width: 90%;
 }
 
-.header-search {
-		display: none; 
+/*font-size and padding bottom is same for both mobile and ipad*/
+.excerpt {
+	font-size: 15px;
+	padding-bottom: 6.3px;
 }
 
 .cat-display a:link,
-.cat-display a:visited 
-{		
+.cat-display a:visited {		
 	margin-right: 10px;
 	float: left;
 	margin-top: 0px;
 	margin-bottom:7px;
 }
 
-.read-more{
+.read-more {
+	height:26px;
+	line-height: 26px;
 	margin-top: 0px;
 	margin-right: 13px;
+}
+
+.read-more a:link,
+.read-more a:visited {
+	font-size:10px;
+}
+
+.post-date {
+	font-size: 10px;
 }
 
 .single .category-nav {
 	margin-top: 50px;
 }
 
-/*----*/
 
-/*---mobile-search for both mobile and ipad*/
+/*---mobile-search for both mobile and ipad----*/
 
 div.mobile-search {
 	margin-top: 5px;
@@ -618,7 +614,7 @@ div.mobile-search {
 
 div.mobile-search #s {
 	width: 100%;
-	background: url("http://localhost:81/wordpress/wp-content/uploads/2016/09/SearchIconMobile.png") no-repeat center center;
+	background: url("/wordpress/wp-content/themes/headytheme/images/SearchIconMobile.png") no-repeat center center;
 	background-color: lightgrey;	
 	text-align: center;
 	text-indent:55px;
@@ -635,7 +631,13 @@ div.mobile-search #s:focus{
 div.mobile-search #searchsubmit {	
 	display: none;
 }
+p.post-info {
+	font-size:15px;
+}
 
+body {
+	font-size: 15px;
+}
 }
 
 
@@ -656,13 +658,14 @@ div.mobile-search #searchsubmit {
 }
 #burgerNav {	
 	height: 80px;
-	background: url("http://localhost:81/wordpress/wp-content/uploads/2016/09/LogoIpad.png"), 
-				url("http://localhost:81/wordpress/wp-content/uploads/2016/09/HeadyIpad.png"),
-				url("http://localhost:81/wordpress/wp-content/uploads/2016/09/Menu-Ipad.png");
+	background: url("/wordpress/wp-content/themes/headytheme/images/LogoIpad.png"), 
+				url("/wordpress/wp-content/themes/headytheme/images/HeadyIpad.png"),
+				url("/wordpress/wp-content/themes/headytheme/images/Menu-Ipad.png");
 	background-position: left top, center, right center;			
 	background-repeat: no-repeat; 
 	background-color: #B8F0F6;
 }
+
 .excerpt, .post-date, .cat-display a:first-child {
 	margin-left: 200px;
 }
@@ -688,28 +691,14 @@ article.has-thumbnail h3 a:visited {
 	font-size: 30px;	
 }
 
-/*.post-border h3 a:link,
-.post-border h3 a:visited 
-{	
-	font-size: 30px;
-}*/
-
-.excerpt {
-	font-size: 15px; /*font same as mobile*/
-	padding-bottom: 6.3px;
-}
-
-.cat-display{
+.cat-display {
 	width:40%;
 	margin-left: 200px;
 }
 
-
-/*same as mobile*/
 .cat-display a:link,
-.cat-display a:visited 
-{	
-	font-size: 8.98px; /*same as mobile*/
+.cat-display a:visited {	
+	font-size: 8.98px; 
 	padding-left: 12px;
 	padding-right: 12px;
 	height: 22px;
@@ -725,25 +714,6 @@ article.has-thumbnail h3 a:visited {
 	margin-left: 0px;
 }
 
-/*post-date same as mobile*/
-
-.post-date {
-	font-size: 10px;
-}
-
-/*same as mobile*/
-.read-more{
-	height:26px;
-	line-height: 26px;
-	margin-top: 0px;
-	margin-right: 13px;
-}
-
-.read-more a:link,
-.read-more a:visited {
-	font-size:10px;
-}
-
 
 /*-------------- FOR DETAILS PAGE --------------------*/
 /*post-heading in the details page*/
@@ -756,20 +726,30 @@ article.post p a:visited {
 	height: 88px;
 	width: 88px;
 }
-
-p.post-info {
-	font-size:15px;
 }
 
-body{
-	font-size: 15px;
-}
-}
-
-/*-------------------------------------------- MEDIA QUERY FOR MOBILE --------------------------------------------*/
+/*-------------------------------------------- MEDIA QUERY FOR MOBILE (320px- 600px)--------------------------------------------*/
 
 @media screen and (min-width: 320px) and (max-width: 600px){	
 
+.overlay a {
+	font-size: 43.86px;
+}
+
+.overlay li a:hover {
+	border-bottom: 5px solid #d81159; 
+}
+
+#burgerNav {	
+	height: 51px;
+	background: url("/wordpress/wp-content/themes/headytheme/images/mobile-Logo.png"), 
+				url("/wordpress/wp-content/themes/headytheme/images/mobile-Heady.png"),
+				url("/wordpress/wp-content/themes/headytheme/images/Menu.png ");
+	background-position: left top, center, right center;			
+	background-repeat: no-repeat; 
+	background-color: #B8F0F6;
+	
+}
 	
 div.container {
 	margin: 0 auto; /*make the content center aligned*/
@@ -781,23 +761,16 @@ div.container {
 }
 		
 .category-nav {
-		/*margin-top: 0px;
-		margin-bottom: 0px; */
 		width:100%;
 }
 	
-.category-nav ul {
-	
-}
-
 .category-nav a:link,
 .category-nav a:visited {
 	line-height: 25px;
 }
 
 .category-nav li a:link,
-.category-nav li a:visited
- {
+.category-nav li a:visited {
 	height: 25px; /*height of the block*/
 	margin-right: 12px; /*margin between each category block*/
 	margin-bottom: 11px;
@@ -811,13 +784,12 @@ article.has-thumbnail h3 a:visited {
 	font-size: 20px;	
 }
 
-.cat-display{
+.cat-display {
 	width:70%;
 }
 
 .cat-display a:link,
-.cat-display a:visited 
-{	
+.cat-display a:visited {	
 	font-size: 8.98px;
 	padding-left: 12px;
 	padding-right: 12px;
@@ -842,7 +814,6 @@ article.has-thumbnail h3 a:visited {
 }
 
 .post-date {
-	font-size: 10px;
 	color: #000000;
 	margin-top: 12px;
 	margin-left: 0px;
@@ -850,24 +821,19 @@ article.has-thumbnail h3 a:visited {
 }
 
 .excerpt {
-	font-size: 15px;
-	width: 90%;
-	height: auto; 
-    padding-left: 0px;
-	padding-right: 0px;
+	width: 98%;
+	height: auto; 	
 	margin-left: 0px;
 	margin-right: 0px;
-	padding-bottom: 6.3px;	
 }
 		
 img {
-		text-align: center;
-		margin: 0 auto;
+	text-align: center;
+	margin: 0 auto;
 }
 				
 /*border around each post*/
-.other-post-border
-{	
+.other-post-border {	
     padding-top:9px;
 	padding-bottom:13px;
 	padding-left: 13px; /*padding between left-border and heading text*/
@@ -877,12 +843,11 @@ img {
 }
 
 .other-post-border h3 a:link,
-.other-post-border h3 a:visited 
-{	
+.other-post-border h3 a:visited {	
 	font-size: 20px;
 }
 
-.read-more{
+.read-more {
 	height:26px;
 	line-height: 26px;
 	margin-top: 0px;
@@ -893,8 +858,7 @@ img {
 .read-more a:visited {
 	font-size:10px;
 }
-	
-	
+		
 	
 /*-------------- FOR DETAILS PAGE --------------------*/
 	
@@ -907,13 +871,5 @@ article.post p a:visited {
 .avatar {
 	height: 83px;
 	width: 83px;
-}
-
-p.post-info {
-	font-size:15px;
-}
-
-body{
-	font-size: 15px;
 }
 }

@@ -2,7 +2,7 @@
 /*All-posts page*/
 	get_header();?>
 	
-<nav class="category-nav"><ul><?php  wp_list_pages('include=176&title_li=');  wp_list_cats(); ?></ul></nav>
+<nav class="category-nav"><ul><?php  wp_list_pages('include=181&title_li=');  wp_list_cats(); ?></ul></nav>
 				
 <?php
 

@@ -12,7 +12,7 @@
    			 										
 			<!-- site-header -->
 			<header class="site-header"> 
-			<div class="logo"><img src="http://localhost:81/wordpress/wp-content/uploads/2016/07/heady-logo.png"></div>
+			<div class="logo"><img src="/wordpress/wp-content/themes/headytheme/images/heady-logo.png"></div>
 				<!-- site-nav -->
 				<nav class="site-nav">				
 						<?php $args = array('theme_location' => 'primary'); ?>						
@@ -22,7 +22,7 @@
 			
 			<div id="burgerNav" <span class="open" style="font-size:30px;cursor:pointer" onclick="openNav()"> </span></div>		
 			<div id="myNav" class="overlay">
-			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="http://localhost:81/wordpress/wp-content/uploads/2016/09/x_button.png"></a>
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="/wordpress/wp-content/themes/headytheme/images/x_button.png"></a>
 			  <div class="overlay-content">
 				<?php wp_nav_menu(); ?>
 			  </div>
@@ -34,7 +34,7 @@
 				
 			<div class="container">
 			
-		<?php if ( is_page( 'blog' ) || is_page( 'view' ) || is_category())
+		<?php if ( is_page( 'blog' ) || is_page( 'all-posts' ) || is_category())
 		{ ?>	
 			<div id="blog-title"><?php bloginfo('name'); ?> </div>
 			<!-- header-search -->

@@ -3,7 +3,7 @@ get_header();?>
 						
  <?php if (have_posts()) : ?>
   
- <nav class="category-nav"><ul><?php  wp_list_pages('include=176&title_li=');  wp_list_cats(); ?></ul></nav>
+ <nav class="category-nav"><ul><?php  wp_list_pages('include=181&title_li=');  wp_list_cats(); ?></ul></nav>
 
 <h2><ul><?php
 		if ( is_category() ) {

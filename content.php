@@ -32,7 +32,7 @@
 			} 
 		?></div>
 		
-		<?php if ( is_search() || is_archive() || is_page('All Posts') ) { ?>
+		<?php if ( is_search() || is_archive() || is_page('all-posts') ) { ?>
 			<div class="read-more"><a href="<?php the_permalink(); ?>">Read More</a></div>
 		<?php } ?> 
 		
