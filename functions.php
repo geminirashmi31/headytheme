@@ -25,7 +25,7 @@ function get_top_ancestor_id() {
 
 // Customize excerpt word count length
 function custom_excerpt_length() {
-	return 50;
+	return 80;
 }
 
 add_filter('excerpt_length', 'custom_excerpt_length');
@@ -38,7 +38,7 @@ function heady_setup() {
 
     // Add featured image support
 	add_theme_support('post-thumbnails');
-	add_image_size('small-thumbnail', 182.33, 180, true);  // 182.33 * 180 in pixels
+	add_image_size('small-thumbnail', 250, 250, true);  
 	add_image_size('banner-image', 997, 376, true); // this function considers size in pixels 997 * 376
 }
 

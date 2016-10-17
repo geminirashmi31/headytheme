@@ -1,12 +1,11 @@
 <?php
 
 get_header(); ?>
-
 	<!-- header-search -->
 		 <div class="header-search">		
 		<?php get_search_form(); ?>
 		</div>
-	<!-- /header-search -->
+	<!-- /header-search -->	
 	<div class="single">
 	<nav class="category-nav"><ul><?php  wp_list_pages('include=181&title_li=');  wp_list_cats(); ?></ul></nav></div>
 	

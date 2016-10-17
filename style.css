@@ -154,7 +154,14 @@ div.container {
 /* Header */
 .site-header {		
 	padding: 0 0 0 0;	
+	/* for fixed position */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
 } 
+
 
 /* Navigation menus */
 
@@ -192,12 +199,12 @@ div.container {
 	color: #ffffff;
 	height: 61px;
     padding-top: 32px;	
-	display: block;	
+	display: block;		
 }
 
 .site-header nav ul li {	
 	font-size: 19px;
-	font-family: Raleway-Heavy;	
+	font-family: Raleway-Heavy;		
 }
 
 .site-header nav ul li:first-child {
@@ -225,11 +232,11 @@ div.container {
 }
 
 #blog-title {
-	font-family: Montserrat Alternates;
-	font-weight: bold;
+	font-family: Montserrat-Bold;
 	color: #152266;
 	font-size: 120px;
 	margin-bottom: 15px;
+	margin-top: 90px;
 }
 
 /* Clearfix */
@@ -306,7 +313,7 @@ nav.category-nav ul li.current_page_item a:visited
 	font-size: 12px;
 	color: #000000;
 	padding-top: 10px;
-	margin-left: 250px;
+	margin-left: 280px;
 	padding-bottom: 10px;
 }
 
@@ -341,7 +348,8 @@ article.has-thumbnail {
 /* search*/
 div.header-search {
 	float: right;
-    margin-top: 0px;
+    margin-top: auto;
+	margin-bottom: 0px;
 }
 
 #main-searchform {
@@ -357,7 +365,7 @@ div.header-search #searchsubmit {
 	padding-top: 10px;
 	padding-bottom: 0px;
 	width: 28px;
-	height: 32px;
+	height: 31.8px;
 	margin-left: -5px;
 	cursor: pointer;	
 } 
@@ -415,7 +423,7 @@ div.header-search #s {
 }
 
 .cat-display a:first-child {
-	margin-left: 250px;
+	margin-left: 280px;
 }
 
 /*border around each post*/
@@ -465,7 +473,7 @@ article.has-thumbnail h3 a:visited {
 	font-size: 18px;
 	width: auto;
 	height: auto;	
-    margin-left: 250px;
+    margin-left: 280px;
 	padding-right:10px;
 	padding-bottom: 6.3%;
 }
@@ -488,7 +496,7 @@ p.post-info {
 }
 
 .single .category-nav {
-	margin-top: 33px;
+	margin-top: 130px;
 }
 
 /*highlight search terms*/
@@ -515,6 +523,15 @@ span.search-term{
 /*To hide desktop navigation menu and search from ipad and mobile*/	
 .site-header, .header-search {
 	display: none;
+}
+
+.burgerMenuFixed{
+	/* for fixed position */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
 }
 
 .overlay {
@@ -655,6 +672,7 @@ body {
 
 #blog-title {
 		font-size: 75px;
+		margin-top: 120px;
 }
 #burgerNav {	
 	height: 80px;
@@ -667,7 +685,7 @@ body {
 }
 
 .excerpt, .post-date, .cat-display a:first-child {
-	margin-left: 200px;
+	margin-left: 280px;
 }
 
 .category-nav a:link,
@@ -693,7 +711,7 @@ article.has-thumbnail h3 a:visited {
 
 .cat-display {
 	width:40%;
-	margin-left: 200px;
+	margin-left: 280px;
 }
 
 .cat-display a:link,
@@ -712,6 +730,12 @@ article.has-thumbnail h3 a:visited {
 
 .cat-display a:first-child {
 	margin-left: 0px;
+}
+
+.post-thumbnail {
+	margin: 0 auto;	
+	margin-top: 10px;
+	height: 100%;
 }
 
 
@@ -757,7 +781,7 @@ div.container {
 	
 #blog-title {
 		font-size: 35px;
-		margin-top: 3px;
+		margin-top: 100px;
 }
 		
 .category-nav {
