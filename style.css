@@ -616,10 +616,6 @@ div.container {
 	font-size: 10px;
 }
 
-.single .category-nav {
-	margin-top: 50px;
-}
-
 
 /*---mobile-search for both mobile and ipad----*/
 
@@ -750,7 +746,12 @@ article.post p a:visited {
 	height: 88px;
 	width: 88px;
 }
+
+.single .category-nav {
+	margin-top: 150px;
 }
+
+} /* end of ipad media query block*/
 
 /*-------------------------------------------- MEDIA QUERY FOR MOBILE (320px- 600px)--------------------------------------------*/
 
@@ -896,4 +897,10 @@ article.post p a:visited {
 	height: 83px;
 	width: 83px;
 }
+
+.single .category-nav {
+	margin-top: 120px;
+}
+
+
 }
