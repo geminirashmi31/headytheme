@@ -36,6 +36,8 @@ get_header(); ?>
 		
 	endif;
 	
+	 comments_template(); 
+	
 	get_footer();
 ?>
 

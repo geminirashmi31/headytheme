@@ -500,7 +500,7 @@ p.post-info {
 }
 
 /*highlight search terms*/
-span.search-term{
+span.search-term {
 	background-color: yellow;
 	font-weight: bold;
 }
@@ -513,8 +513,23 @@ span.search-term{
 	.overlay, .open, .mobile-search{
 		display: none;
 	}
+	
+	#disqus_thread {
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
+/*hide and show nav menu when hovering over logo*/
+.logo + .site-nav {	
+	width: 92px;
+	height: 61px;
+	transition: width 2s, height 4s;
+}
+.logo:hover + .site-nav {
+	width: 1500px;
+    height: 61px;
+}
+}
 
 
 /*-------------------------------------------- COMMON MEDIA QUERY FOR MOBILE AND IPAD (320px- 1024px)--------------------------------------------*/
@@ -902,5 +917,5 @@ article.post p a:visited {
 	margin-top: 120px;
 }
 
-
 }
+
