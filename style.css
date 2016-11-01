@@ -505,6 +505,10 @@ span.search-term {
 	font-weight: bold;
 }
 
+#disqus_thread {
+    margin: 0 auto;
+    max-width: 1000px;
+}
 
 /*-------------------------------------------- MEDIA QUERY FOR DESKTOP (1025px- 2560px)--------------------------------------------*/
 /* Need to hide the list menu to be displayed for smaller screen*/
@@ -513,22 +517,6 @@ span.search-term {
 	.overlay, .open, .mobile-search{
 		display: none;
 	}
-	
-	#disqus_thread {
-    margin: 0 auto;
-    max-width: 1000px;
-}
-
-/*hide and show nav menu when hovering over logo*/
-.logo + .site-nav {	
-	width: 92px;
-	height: 61px;
-	transition: width 2s, height 4s;
-}
-.logo:hover + .site-nav {
-	width: 1500px;
-    height: 61px;
-}
 }
 
 
