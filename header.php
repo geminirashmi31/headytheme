@@ -34,10 +34,10 @@
 			
 			<div class="burgerMenuFixed">				
 				<div id="burgerNav">
-				<div class="left"><img src="/wordpress/wp-content/themes/headytheme/images/Heady_Dark_Logo.png" /></div>
-				<div class="center"><img src="/wordpress/wp-content/themes/headytheme/images/headyWord.png" onclick="scrollToTopPosition()"/></div>
+				<div class="left"><img id="leftIcon" src="/wordpress/wp-content/themes/headytheme/images/Heady_Dark_Logo.png" /></div>
+				<div class="center"><img id="centerHeadyWord" src="/wordpress/wp-content/themes/headytheme/images/headyWord.png" onclick="scrollToTopPosition()"/></div>
 				<div class="right" span class="open" style="font-size:30px;cursor:pointer" onclick="openNav()">
-				<img src="/wordpress/wp-content/themes/headytheme/images/hamburgerIcon.png" /></span></div>
+				<img id="rightIcon" src="/wordpress/wp-content/themes/headytheme/images/hamburgerIcon.png" /></span></div>
 				<div id="myNav" class="overlay">
 					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="/wordpress/wp-content/themes/headytheme/images/x_button.png" /></a>
 					<div class="overlay-content">
@@ -45,8 +45,10 @@
 					</div>
 				</div>
 			</div>
+			<div id="mobile-search-display">
 				<div class="mobile-search">
 			<?php get_search_form(); ?>
+			</div>
 			</div>
 			</div>
 			<div class="container">

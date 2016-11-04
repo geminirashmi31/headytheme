@@ -25,7 +25,7 @@ jQuery(document).ready(function() {
 			jQuery(".burgerMenuFixed").css({"width": "100%"}); /*for ipad and mobile*/
 			jQuery(".pinkCornerLogo").css({"display": "none"});
 			jQuery(".blackHamburgerIcon").css({"display": "none"});
-			jQuery("#burgerNav").css({"display": "block"});
+			jQuery("#burgerNav").css({"display": "block"});			
 			jQuery(".mobile-search").css({"display": "block"});
 			jQuery(".left").css({"display": "block"});
 			jQuery(".center").css({"display": "block"});

@@ -330,13 +330,7 @@ nav.category-nav ul li.current_page_item a:visited
 	margin-bottom: 20px;
 }
 
-/* Image Styles for all images*/
-img {
-	max-width: 100%;
-	height: auto;
-	margin: auto;  /*margin and display to center the image for thumbnail*/
-	display: block;
-}
+
 
 /*displaying on main page*/
 article.has-thumbnail {
@@ -515,19 +509,35 @@ span.search-term {
 }
 
 
-
 /*-------------------------------------------- MEDIA QUERY FOR DESKTOP (1025px- 2560px)--------------------------------------------*/
 /* Need to hide the list menu to be displayed for smaller screen*/
 
 @media screen and (min-width: 1025px) and (max-width: 2560px){
-	.overlay, .open, .mobile-search, .pinkLogo, .burgerMenuFixed, #burgerNav, .left, .center, .right {
+	.overlay, .open, .pinkLogo, .burgerMenuFixed, #burgerNav, 
+	.left, .center, .right, #leftIcon, #centerHeadyWord, #rightIcon, #mobile-search-display {
 		display: none;
 	}
+	
+	/* Image Styles for all images*/
+	img {
+		max-width: 100%;
+		height: auto;
+		margin: auto;  /*margin and display to center the image for thumbnail*/
+		display: block;
+		}
 }
 
 
 /*-------------------------------------------- COMMON MEDIA QUERY FOR MOBILE AND IPAD (320px- 1024px)--------------------------------------------*/
 @media screen and (min-width: 320px) and (max-width: 1024px){
+	
+/* Image Styles for all images*/
+img {
+	max-width: 100%;
+	height: auto;
+	margin: auto;  /*margin and display to center the image for thumbnail*/
+	display: block;
+}
 
 /*To hide desktop navigation menu and search from ipad and mobile*/	
 .site-header, .header-search {
@@ -581,8 +591,8 @@ span.search-term {
 
 .overlay .closebtn {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 10px;
+    right: 10px;
     font-size: 60px;
 	color: #d81159; 
 }
@@ -797,7 +807,7 @@ article.post p a:visited {
 }
 
 .single .category-nav {
-	margin-top: 150px;
+	margin-top: 30px;
 }
 
 } /* end of ipad media query block*/
@@ -990,7 +1000,7 @@ article.post p a:visited {
 }
 
 .single .category-nav {
-	margin-top: 120px;
+	margin-top: 30px;
 }
 
 }
