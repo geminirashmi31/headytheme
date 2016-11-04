@@ -35,7 +35,7 @@
 			<div class="burgerMenuFixed">				
 				<div id="burgerNav">
 				<div class="left"><img src="/wordpress/wp-content/themes/headytheme/images/Heady_Dark_Logo.png" /></div>
-				<div class="center"><img src="/wordpress/wp-content/themes/headytheme/images/headyWord.png" /></div>
+				<div class="center"><img src="/wordpress/wp-content/themes/headytheme/images/headyWord.png" onclick="scrollToTopPosition()"/></div>
 				<div class="right" span class="open" style="font-size:30px;cursor:pointer" onclick="openNav()">
 				<img src="/wordpress/wp-content/themes/headytheme/images/hamburgerIcon.png" /></span></div>
 				<div id="myNav" class="overlay">

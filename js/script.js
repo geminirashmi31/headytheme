@@ -12,6 +12,10 @@ function closeNav() {
 	jQuery(".burgerMenuFixed").css({"display": "block"});
 }
 
+function scrollToTopPosition() {
+	jQuery(window).scrollTop(0);
+}
+
 jQuery(document).ready(function() {
 	/* scroll setting*/
 	jQuery(window).scroll(function(){
