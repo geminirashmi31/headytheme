@@ -12,7 +12,7 @@
    			 										
 			<!-- site-header -->
 			<header class="site-header"> 
-			<div class="logo"><a href="http://www.heady.io/"><img src="/wordpress/wp-content/themes/headytheme/images/heady-logo.png"></div></a>
+			<div class="logo"><a href="http://www.heady.io/"><img src="/wordpress/wp-content/themes/headytheme/images/heady-logo.png" /></div></a>
 				<!-- site-nav -->
 				<nav class="site-nav">				
 						<?php $args = array('theme_location' => 'primary'); ?>						
@@ -20,15 +20,31 @@
 				</nav><!-- /site-nav -->			 
 			</header><!-- /site-header -->
 			
-			<div class="burgerMenuFixed">
-				<div id="burgerNav" <span class="open" style="font-size:30px;cursor:pointer" onclick="openNav()"> </span></div>		
-				<div id="myNav" class="overlay">
-				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="/wordpress/wp-content/themes/headytheme/images/x_button.png"></a>
-				<div class="overlay-content">
-					<?php wp_nav_menu(); ?>
+			<div class="pinkLogo">
+				<div class="pinkCornerLogo"><img src="/wordpress/wp-content/themes/headytheme/images/heady-logo.png" /></div>
+				<div class="blackHamburgerIcon" span class="open" style="font-size:30px;cursor:pointer" onclick="openNav()">
+					<img src="/wordpress/wp-content/themes/headytheme/images/hamburgerIcon.png" /></span></div>				
+					<div id="myNav" class="overlay">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="/wordpress/wp-content/themes/headytheme/images/x_button.png" /></a>
+					<div class="overlay-content">
+						<?php wp_nav_menu(); ?>
+					</div>
 				</div>
 			</div>
 			
+			<div class="burgerMenuFixed">				
+				<div id="burgerNav">
+				<div class="left"><img src="/wordpress/wp-content/themes/headytheme/images/Heady_Dark_Logo.png" /></div>
+				<div class="center"><img src="/wordpress/wp-content/themes/headytheme/images/headyWord.png" /></div>
+				<div class="right" span class="open" style="font-size:30px;cursor:pointer" onclick="openNav()">
+				<img src="/wordpress/wp-content/themes/headytheme/images/hamburgerIcon.png" /></span></div>
+				<div id="myNav" class="overlay">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="/wordpress/wp-content/themes/headytheme/images/x_button.png" /></a>
+					<div class="overlay-content">
+						<?php wp_nav_menu(); ?>
+					</div>
+				</div>
+			</div>
 				<div class="mobile-search">
 			<?php get_search_form(); ?>
 			</div>
