@@ -510,6 +510,13 @@ span.search-term {
 	color: #d81159;
 }
 
+/* Image Styles for all images*/
+	img {
+		max-width: 100%;
+		height: auto;
+		margin: auto;  /*margin and display to center the image for thumbnail*/
+		display: block;
+		}
 
 /*-------------------------------------------- MEDIA QUERY FOR DESKTOP (1025px- 2560px)--------------------------------------------*/
 /* Need to hide the list menu to be displayed for smaller screen*/
@@ -520,27 +527,13 @@ span.search-term {
 		display: none;
 	}
 	
-	/* Image Styles for all images*/
-	img {
-		max-width: 100%;
-		height: auto;
-		margin: auto;  /*margin and display to center the image for thumbnail*/
-		display: block;
-		}
+	
 }
 
 
 /*-------------------------------------------- COMMON MEDIA QUERY FOR MOBILE AND IPAD (320px- 1024px)--------------------------------------------*/
 @media screen and (min-width: 320px) and (max-width: 1024px){
 	
-/* Image Styles for all images*/
-img {
-	max-width: 100%;
-	height: auto;
-	margin: auto;  /*margin and display to center the image for thumbnail*/
-	display: block;
-}
-
 /*To hide desktop navigation menu and search from ipad and mobile*/	
 .site-header, .header-search {
 	display: none;
@@ -728,8 +721,7 @@ body {
 	height: 30px;
 	width: 159px;
 	padding-top: 25px;	
-	margin-left: 42%;
-	/*margin-right: 50%;*/	
+	margin-left: 42%;	
 }
 
 .right {	
