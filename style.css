@@ -186,18 +186,20 @@ div.container {
 }
 
 .logo {
+	
 	height: 92px;
 	width: 93px;
 	margin-left: 0px;
 	margin-top: 0px;	
 }
 
+
 /* Header Navigation Menu */
 .site-header nav {
 	margin-top: -92px;
 	background-color: rgba(83, 91, 130, 0.498039);	
 	color: #ffffff;
-	height: 61px;
+	height: 60px;
     padding-top: 32px;	
 	display: block;		
 }

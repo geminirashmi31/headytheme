@@ -12,13 +12,16 @@
    			 										
 			<!-- site-header -->
 			<header class="site-header"> 
-			<div class="logo"><a href="http://www.heady.io/"><img src="/wordpress/wp-content/themes/headytheme/images/heady-logo.png" /></div></a>
+			<div class="logo"><a href="http://www.heady.io/"><img id="headyImg" src="/wordpress/wp-content/themes/headytheme/images/heady-logo.png" /></a></div>
 				<!-- site-nav -->
 				<nav class="site-nav">				
 						<?php $args = array('theme_location' => 'primary'); ?>						
 						<?php wp_nav_menu( $args); ?>					
 				</nav><!-- /site-nav -->			 
 			</header><!-- /site-header -->
+			
+			
+			
 			
 			<div class="pinkLogo">
 				<div class="pinkCornerLogo"><img src="/wordpress/wp-content/themes/headytheme/images/heady-logo.png" /></div>
